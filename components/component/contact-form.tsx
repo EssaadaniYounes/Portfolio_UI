@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import EmailContent from "../partials/EmailContent";
+import { SubmitButton } from "../partials/SubmitButton";
 
 export function ContactForm() {
   async function handleSubmit(formData: FormData) {
@@ -12,17 +14,30 @@ export function ContactForm() {
     const name = formData.get("name");
     const from = formData.get("email");
     const message = formData.get("message");
+    console.log({
+      name,
+      from,
+      message,
+      new: name!.toString().split(" ").join("_"),
+    });
     if (!name || !from || !message) return;
     console.log("Sending");
     const res = await resend.emails.send({
-      from: from.toString(),
+      from: `${name.toString().split(" ").join("_")}@resend.dev`,
       to: "essaadani.yo@gmail.com",
       subject: "Contact From Portfolio",
-      html: `<h1>${name.toString()}</h1><p>${message.toString()}</p>`,
+      react: (
+        <EmailContent
+          name={name.toString()}
+          from={from.toString()}
+          message={message.toString()}
+        />
+      ),
     });
+    console.log(res);
   }
   return (
-    <section className="w-full max-w-4xl mx-auto py-12 md:py-16 lg:py-20">
+    <section className="w-full max-w-3xl mx-auto py-12 md:py-16 lg:py-20">
       <div className="space-y-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -30,27 +45,35 @@ export function ContactForm() {
           </h2>
           <p className="mt-3 text-gray-500 dark:text-gray-400 max-w-md mx-auto">
             Have a question or want to work together? Fill out the form below
-            and we{"'"}ll get back to you as soon as possible.
+            and I{"'"}ll get back to you as soon as possible.
           </p>
         </div>
         <form action={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="space-y-1">
               <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="John Doe" type="text" />
+              <Input id="name" name="name" placeholder="John Doe" type="text" />
             </div>
             <div className="space-y-1">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" placeholder="example@email.com" type="email" />
+              <Input
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                type="email"
+              />
             </div>
           </div>
           <div className="space-y-1">
             <Label htmlFor="message">Message</Label>
-            <Textarea id="message" placeholder="Your message..." rows={5} />
+            <Textarea
+              id="message"
+              name="message"
+              placeholder="Your message..."
+              rows={5}
+            />
           </div>
-          <Button className="w-full sm:w-auto" type="submit">
-            Submit
-          </Button>
+          <SubmitButton label="Submit" />
         </form>
       </div>
     </section>
