@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
-import { CircleAlert } from "lucide-react";
+import { Project as ProjectType } from "@/types";
 import ProjectTools from "./ProjectTools";
 
-function Project({ project }: { project: Project }) {
+function Project({ project }: { project: ProjectType }) {
   return (
     <Card>
       <CardContent className="flex flex-col items-start gap-4">

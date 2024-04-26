@@ -1,8 +1,8 @@
 import { Dot, MapPin } from "lucide-react";
 import React from "react";
 import ExperienceDescription from "./ExperienceDescription";
-
-function Experience({ experience }: { experience: Experience }) {
+import { Experience as ExperienceType } from "@/types";
+function Experience({ experience }: { experience: ExperienceType }) {
   return (
     <div className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-gray-300 shadow-sm hover:shadow-md transition-shadow duration-300 p-8">
       <div className="flex flex-col items-start space-y-4">
