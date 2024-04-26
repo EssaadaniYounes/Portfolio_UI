@@ -38,8 +38,9 @@ import { ContactForm } from "./contact-form";
 export function Component() {
   console.log(process.env.NEXT_PUBLIC_CONTACT_FEATURE_FLAG_ENABLED);
   return (
-    <div className="flex flex-col min-h-[100dvh]">
+    <div className="flex flex-col min-h-[100dvh] m-4">
       <HeroSection />
+      <hr />
       <Projects />
       <Experiences />
       <Skills />

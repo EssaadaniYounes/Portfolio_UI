@@ -1,6 +1,13 @@
-import { Experience, Project, Skill } from "@/types";
+import { Experience, Project, Skill, SocialLink } from "@/types";
 import { DiDocker, DiPostgresql } from "react-icons/di";
-import { FaGit, FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaGit,
+  FaLinkedin,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { GrCss3, GrMysql } from "react-icons/gr";
 import { LiaHtml5 } from "react-icons/lia";
@@ -198,5 +205,23 @@ export const SKILLS: Skill[] = [
   {
     name: "Prisma",
     icon: TbBrandPrisma,
+  },
+];
+
+export const SOCIAL_LINKS: SocialLink[] = [
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/younes-essaadani",
+    icon: FaLinkedin,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/EssaadaniYounes",
+    icon: FaSquareGithub,
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=61553810068238",
+    icon: FaFacebookSquare,
   },
 ];

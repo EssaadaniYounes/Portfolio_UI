@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import SocialLinks from "./SocialLinks";
 
 function HeroSection() {
   return (
-    <section className="w-full pt-12 md:pt-24 lg:pt-32 border-b">
+    <section className="w-full pt-12 md:pt-24 lg:pt-32 mb-10 md:mb-20">
       <div className="container space-y-10 xl:space-y-16 px-4 md:px-6">
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-8 md:gap-16">
           <div>
@@ -14,11 +15,16 @@ function HeroSection() {
               Full-Stack Web Developer
             </h2>
             <p className="mt-4 text-gray-500 dark:text-gray-400 max-w-[600px]">
-              I am a passionate and experienced full-stack web developer with a
-              strong background in building modern, responsive, and scalable web
-              applications. I specialize in creating dynamic and user-friendly
-              interfaces using the latest technologies and best practices.
+              &quot;I am a passionate and experienced full-stack web developer
+              with a strong background in building modern, responsive, and
+              scalable web applications. I specialize in creating dynamic and
+              user-friendly interfaces using the latest technologies and best
+              practices.&quot;
             </p>
+            <h2 className="text-2xl text-center md:text-left font-medium text-gray-700 dark:text-gray-400 mt-2">
+              Connect with me
+            </h2>
+            <SocialLinks />
           </div>
           <div className="flex justify-center items-center md:-mt-12 md:mb-4">
             <Image

@@ -21,3 +21,9 @@ type Skill = {
   name: string;
   icon: IconType;
 };
+
+type SocialLink = {
+  name: string;
+  url: string;
+  icon: IconType;
+};
