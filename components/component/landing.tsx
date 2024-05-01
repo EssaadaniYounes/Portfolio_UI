@@ -3,6 +3,7 @@ import Projects from "../partials/Projects";
 import { Experiences } from "./experiences";
 import Skills from "../partials/Skills";
 import { ContactForm } from "./contact-form";
+import { Articles } from "./articles";
 
 export function Component() {
   console.log(process.env.NEXT_PUBLIC_CONTACT_FEATURE_FLAG_ENABLED);
@@ -12,6 +13,7 @@ export function Component() {
       <hr />
       <Projects />
       <Experiences />
+      <Articles />
       <Skills />
       {process.env.NEXT_PUBLIC_CONTACT_FEATURE_FLAG_ENABLED === "enabled" && (
         <ContactForm />

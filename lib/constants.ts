@@ -1,4 +1,4 @@
-import { Experience, Project, Skill, SocialLink } from "@/types";
+import { Article, Experience, Project, Skill, SocialLink } from "@/types";
 import { DiDocker, DiPostgresql } from "react-icons/di";
 import {
   FaFacebookSquare,
@@ -223,5 +223,15 @@ export const SOCIAL_LINKS: SocialLink[] = [
     name: "Facebook",
     url: "https://www.facebook.com/profile.php?id=61553810068238",
     icon: FaFacebookSquare,
+  },
+];
+
+export const ARTICLES: Article[] = [
+  {
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:786/format:webp/1*ty42wOKdun7WRnAZhmuhEQ.png",
+    title: "Improve your application performance : NodeJs and Redis",
+    description:
+      "Are you tired of waiting for your data to be retrieved from the database every time a request hits your server? Opening connections, executing queries — it can slow down your application. But what if there was a way to bypass all that?",
   },
 ];

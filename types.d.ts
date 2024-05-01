@@ -27,3 +27,9 @@ type SocialLink = {
   url: string;
   icon: IconType;
 };
+
+type Article = {
+  thumbnail: string;
+  title: string;
+  description: string;
+};
