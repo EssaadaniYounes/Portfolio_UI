@@ -14,7 +14,14 @@ export default function Article({ article }: { article: ArticleType }) {
           src={article.thumbnail}
           width={400}
         />
-        <h3 className="text-xl font-bold ">{article.title}</h3>
+        <a
+          href={article.url}
+          target="_blank"
+          rel="noreferrer"
+          className="text-xl font-bold "
+        >
+          {article.title}
+        </a>
         <p className="flex-1 text-xs font-medium text-gray-400 dark:text-gray-400">
           {article.description.slice(0, 120)}...
         </p>

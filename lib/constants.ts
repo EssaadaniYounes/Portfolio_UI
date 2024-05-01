@@ -233,5 +233,6 @@ export const ARTICLES: Article[] = [
     title: "Improve your application performance : NodeJs and Redis",
     description:
       "Are you tired of waiting for your data to be retrieved from the database every time a request hits your server? Opening connections, executing queries — it can slow down your application. But what if there was a way to bypass all that?",
+    url: "https://medium.com/@essaadani.yo/improve-your-application-performance-nodejs-and-redis-ed90cbce0763",
   },
 ];

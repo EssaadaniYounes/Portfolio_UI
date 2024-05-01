@@ -32,4 +32,5 @@ type Article = {
   thumbnail: string;
   title: string;
   description: string;
+  url: string;
 };
