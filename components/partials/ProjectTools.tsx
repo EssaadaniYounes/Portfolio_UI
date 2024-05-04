@@ -12,21 +12,21 @@ import {
 function ProjectTools({ technologies }: { technologies: string[] }) {
   return (
     <Dialog>
-      <DialogTrigger className="ml-auto mr-4">
+      <DialogTrigger>
         <CircleAlert size={25} className="ml-auto mr-4 cursor-pointer" />
       </DialogTrigger>
       <DialogContent className="capitalize">
         <DialogHeader>
           <DialogTitle>
-            <h2 className="text-lg font-medium text-gray-700 dark:text-gray-200">
+            <span className="text-lg font-medium text-gray-700 dark:text-gray-200">
               Technologies :
-            </h2>
+            </span>
           </DialogTitle>
           <DialogDescription>
             {technologies.map((tech) => (
-              <p key={tech} className="text-sm text-gray-400">
+              <span key={tech} className="block text-sm text-gray-400">
                 * {tech}
-              </p>
+              </span>
             ))}
           </DialogDescription>
         </DialogHeader>

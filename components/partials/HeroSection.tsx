@@ -29,7 +29,7 @@ function HeroSection() {
           <div className="flex justify-center items-center md:-mt-12 md:mb-4">
             <Image
               alt="Essaadani Younes"
-              className="rounded-full w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] object-cover"
+              className="rounded-full object-cover"
               height={300}
               src="/images/me.jpg"
               style={{
@@ -37,6 +37,7 @@ function HeroSection() {
                 objectFit: "cover",
               }}
               width={300}
+              priority
             />
           </div>
         </div>

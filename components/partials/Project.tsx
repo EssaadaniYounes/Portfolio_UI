@@ -7,7 +7,7 @@ import ProjectTools from "./ProjectTools";
 function Project({ project }: { project: ProjectType }) {
   return (
     <Card>
-      <CardContent className="flex flex-col items-start gap-4">
+      <CardContent className="flex flex-col justify-between items-start gap-4">
         <Image
           alt="Project 1"
           className="rounded-md w-full aspect-[16/9] object-cover mt-2"
@@ -19,7 +19,19 @@ function Project({ project }: { project: ProjectType }) {
         <p className=" flex-1 text-gray-400 dark:text-gray-400">
           {project.description}
         </p>
-        <ProjectTools technologies={project.technologies} />
+        <div className="flex items-center justify-between w-full">
+          {project.url && (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-gray-600 p-2 rounded-md text-sm justify-self-end font-medium text-gray-200 dark:text-gray-400"
+            >
+              View Project
+            </a>
+          )}
+          <ProjectTools technologies={project.technologies} />
+        </div>
       </CardContent>
     </Card>
   );

@@ -41,6 +41,15 @@ export const PROJECTS: Project[] = [
       "Firebase",
     ],
     imageUrl: "/images/PersonaNET.png",
+    url: "https://personanet.app/",
+  },
+  {
+    name: "Hash tag maker",
+    description:
+      "A hash tag maker that use AI to search trough a target platform and retrieve the most used tags based on the topic you intrested in.",
+    technologies: ["NextJs", "Typescript", "Langchain"],
+    imageUrl: "/images/hashtag-maker.png",
+    url: "https://hashtag-maker.vercel.app/",
   },
   {
     name: "School Portal",
@@ -56,6 +65,7 @@ export const PROJECTS: Project[] = [
     ],
     imageUrl: "/images/SchoolManagment.png",
   },
+
   {
     name: "Portfolio Maker",
     description:

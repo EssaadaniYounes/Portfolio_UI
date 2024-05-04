@@ -6,6 +6,7 @@ type Project = {
   description: string;
   technologies: string[];
   imageUrl: string;
+  url?: string;
 };
 
 type Experience = {
