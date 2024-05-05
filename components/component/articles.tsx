@@ -6,7 +6,7 @@ export function Articles() {
     <section className="w-full py-6 md:py-10 lg:py-14">
       <div className="container px-4 md:px-6">
         <div className="space-y-4 text-center my-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl  text-gray-700 dark:text-gray-200">
             Articles & Blogs
           </h2>
         </div>

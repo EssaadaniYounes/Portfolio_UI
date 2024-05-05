@@ -5,7 +5,7 @@ import { Article as ArticleType } from "@/types";
 
 export default function Article({ article }: { article: ArticleType }) {
   return (
-    <Card>
+    <Card className="bg-gray-200 dark:bg-gray-800">
       <CardContent className="flex flex-col items-start gap-4">
         <Image
           alt="article 1"

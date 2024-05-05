@@ -8,9 +8,14 @@ function SocialLinks() {
         return (
           <div
             key={s.url}
-            className="mt-4 relative before:content-[''] before:block before:w-12 before:h-12 before:bg-blue-200 before:absolute before:-top-1 before:-left-1 before:-z-10 before:rounded-md before:opacity-0 before:hover:opacity-100 before:duration-300"
+            className="mt-4 relative before:content-[''] before:block before:w-12 before:h-12 before:bg-blue-200 dark:before:bg-blue-600 before:absolute before:-top-1 before:-left-1 before:-z-10 before:rounded-md before:opacity-0 before:hover:opacity-100 before:duration-300"
           >
-            <a href={s.url} target="_blank" rel="noreferrer">
+            <a
+              href={s.url}
+              target="_blank"
+              rel="noreferrer"
+              className="dark:text-gray-300"
+            >
               {<s.icon size={40} />}
             </a>
           </div>

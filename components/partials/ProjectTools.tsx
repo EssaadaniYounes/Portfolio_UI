@@ -13,7 +13,10 @@ function ProjectTools({ technologies }: { technologies: string[] }) {
   return (
     <Dialog>
       <DialogTrigger>
-        <CircleAlert size={25} className="ml-auto mr-4 cursor-pointer" />
+        <CircleAlert
+          size={25}
+          className="ml-auto mr-4 cursor-pointer text-gray-800 dark:text-gray-300"
+        />
       </DialogTrigger>
       <DialogContent className="capitalize">
         <DialogHeader>

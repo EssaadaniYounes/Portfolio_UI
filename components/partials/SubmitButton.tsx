@@ -10,7 +10,9 @@ export function SubmitButton({ label }: { label: string }) {
     <Button
       type="submit"
       disabled={pending}
-      className={`${pending ? "cursor-not-allowed" : ""}`}
+      className={`${
+        pending ? "cursor-not-allowed" : ""
+      } bg-gray-800 dark:bg-gray-200`}
     >
       {label} {pending ? "..." : ""}
     </Button>

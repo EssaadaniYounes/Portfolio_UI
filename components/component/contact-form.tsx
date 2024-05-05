@@ -40,7 +40,7 @@ export function ContactForm() {
     <section className="w-full max-w-3xl mx-auto py-12 md:py-16 lg:py-20">
       <div className="space-y-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl  text-gray-700 dark:text-gray-200  ">
             Get in Touch
           </h2>
           <p className="mt-3 text-gray-500 dark:text-gray-400 max-w-md mx-auto">
@@ -51,24 +51,38 @@ export function ContactForm() {
         <form action={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="space-y-1">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" name="name" placeholder="John Doe" type="text" />
+              <Label className="dark:text-gray-300" htmlFor="name">
+                Name
+              </Label>
+              <Input
+                id="name"
+                name="name"
+                className="dark:bg-gray-950 dark:placeholder:text-gray-300 dark:text-gray-300"
+                placeholder="John Doe"
+                type="text"
+              />
             </div>
             <div className="space-y-1">
-              <Label htmlFor="email">Email</Label>
+              <Label className="dark:text-gray-300" htmlFor="email">
+                Email
+              </Label>
               <Input
                 id="email"
                 name="email"
+                className="dark:bg-gray-950 dark:placeholder:text-gray-300 dark:text-gray-300"
                 placeholder="example@email.com"
                 type="email"
               />
             </div>
           </div>
           <div className="space-y-1">
-            <Label htmlFor="message">Message</Label>
+            <Label className="dark:text-gray-300" htmlFor="message">
+              Message
+            </Label>
             <Textarea
               id="message"
               name="message"
+              className="dark:bg-gray-950 dark:placeholder:text-gray-300 dark:text-gray-300"
               placeholder="Your message..."
               rows={5}
             />

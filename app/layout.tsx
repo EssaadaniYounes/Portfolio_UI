@@ -4,6 +4,8 @@ import "./globals.css";
 
 import { Judson } from "next/font/google";
 import { Libre_Franklin } from "next/font/google";
+import { Navbar } from "@/components/ui/navbar";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const judson = Judson({
   display: "swap",
@@ -30,8 +32,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={judson.variable + libre_franklin.variable}>
-        {children}
+      <body
+        className={
+          judson.variable +
+          libre_franklin.variable +
+          "bg-white dark:bg-gray-900"
+        }
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

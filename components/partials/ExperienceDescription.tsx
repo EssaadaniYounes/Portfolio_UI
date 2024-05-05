@@ -8,7 +8,7 @@ function ExperienceDescription({ description }: { description: string[] }) {
     <>
       {!showDescription ? (
         <button
-          className="flex items-center gap-2 mx-auto bg-blue-300 p-2 px-4 rounded-md  text-white font-medium capitalize text-sm/relaxed"
+          className="flex items-center gap-2 mx-auto bg-blue-300 dark:bg-blue-500 p-2 px-4 rounded-md  text-white font-medium capitalize text-sm/relaxed"
           onClick={() => setShowDescription(true)}
         >
           <Eye />
@@ -26,7 +26,7 @@ function ExperienceDescription({ description }: { description: string[] }) {
             </p>
           ))}
           <button
-            className="flex items-center gap-2 mx-auto bg-blue-300 p-2 px-4 rounded-md  text-white font-medium capitalize text-sm/relaxed"
+            className="flex items-center gap-2 mx-auto bg-blue-300 dark:bg-blue-500 p-2 px-4 rounded-md  text-white font-medium capitalize text-sm/relaxed"
             onClick={() => setShowDescription(false)}
           >
             <EyeOff />

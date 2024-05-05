@@ -6,7 +6,6 @@ import { ContactForm } from "./contact-form";
 import { Articles } from "./articles";
 
 export function Component() {
-  console.log(process.env.NEXT_PUBLIC_CONTACT_FEATURE_FLAG_ENABLED);
   return (
     <div className="flex flex-col min-h-[100dvh] m-4">
       <HeroSection />
