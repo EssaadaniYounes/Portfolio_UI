@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import SocialLinks from "./SocialLinks";
+import { Button } from "../ui/button";
+import { Download } from "lucide-react";
 
 function HeroSection() {
   return (
