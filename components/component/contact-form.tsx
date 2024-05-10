@@ -70,7 +70,7 @@ export function ContactForm() {
                 id="email"
                 name="email"
                 className="dark:bg-gray-950 dark:placeholder:text-gray-300 dark:text-gray-300"
-                placeholder="example@email.com"
+                placeholder="john.Do@hotmail.fr"
                 type="email"
               />
             </div>
