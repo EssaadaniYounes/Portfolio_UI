@@ -1,4 +1,11 @@
-import { Article, Experience, Project, Skill, SocialLink } from "@/types";
+import {
+  Article,
+  Experience,
+  MenuLink,
+  Project,
+  Skill,
+  SocialLink,
+} from "@/types";
 import { DiDocker, DiPostgresql } from "react-icons/di";
 import {
   FaFacebookSquare,
@@ -245,5 +252,28 @@ export const ARTICLES: Article[] = [
     description:
       "Are you tired of waiting for your data to be retrieved from the database every time a request hits your server? Opening connections, executing queries — it can slow down your application. But what if there was a way to bypass all that?",
     url: "https://medium.com/@essaadani.yo/improve-your-application-performance-nodejs-and-redis-ed90cbce0763",
+  },
+];
+
+export const MENU_LINKS: MenuLink[] = [
+  {
+    title: "Home",
+    url: "/#home",
+  },
+  {
+    title: "About",
+    url: "/#about",
+  },
+  {
+    title: "Projects",
+    url: "/#projects",
+  },
+  {
+    title: "Experience",
+    url: "/#experience",
+  },
+  {
+    title: "Contact",
+    url: "/#contact",
   },
 ];

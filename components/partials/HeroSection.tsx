@@ -9,13 +9,16 @@ import { PiHandWavingDuotone } from "react-icons/pi";
 
 function HeroSection() {
   return (
-    <section className="w-full pt-12 md:pt-24 lg:pt-32 mb-10 md:mb-20">
+    <section
+      id="home"
+      className="w-full mt-8 pt-12 md:pt-24 lg:pt-32 mb-10 md:mb-20"
+    >
       <div className="container space-y-10 xl:space-y-16 px-4 md:px-6">
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-8 md:gap-16">
           <div>
             <h2
               className={cn(
-                "text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider text-gray-900 dark:text-gray-200 mt-2",
+                "text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider text-gray-800 dark:text-gray-200 mt-2",
                 poppins.className,
                 ""
               )}

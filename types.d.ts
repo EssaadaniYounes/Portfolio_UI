@@ -35,3 +35,9 @@ type Article = {
   description: string;
   url: string;
 };
+
+type MenuLink = {
+  title: string;
+  url: string;
+  icon?: LucideIcon;
+};

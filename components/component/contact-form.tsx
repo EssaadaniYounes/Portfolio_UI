@@ -37,7 +37,10 @@ export function ContactForm() {
     console.log(res);
   }
   return (
-    <section className="w-full max-w-3xl mx-auto py-12 md:py-16 lg:py-20">
+    <section
+      id="contact"
+      className="w-full max-w-3xl mx-auto py-12 md:py-16 lg:py-20"
+    >
       <div className="space-y-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl  text-gray-700 dark:text-gray-200  ">

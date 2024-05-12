@@ -6,7 +6,10 @@ import Project from "./Project";
 
 function Projects() {
   return (
-    <section className="my-4 w-full  py-12 md:py-24 lg:py-32 bg-gray-200 dark:bg-gray-700 rounded-lg">
+    <section
+      id="projects"
+      className="my-4 w-full  py-12 md:py-24 lg:py-32 bg-gray-200 dark:bg-gray-700 rounded-lg"
+    >
       <div className="container px-4 md:px-6">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-700 dark:text-gray-200">
