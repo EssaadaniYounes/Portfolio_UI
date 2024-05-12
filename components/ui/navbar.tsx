@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export function Navbar() {
   return (
-    <div className="w-full fixed top-0 flex items-center bg-white dark:bg-gray-950 shadow-sm space-x-2 justify-between py-4 px-6">
+    <div className="w-full fixed z-10 top-0 flex items-center bg-white dark:bg-gray-950 shadow-sm space-x-2 justify-between py-4 px-6">
       <Link
         href={"/"}
         className={cn("text-xl", poppins.className, "font-semibold")}
