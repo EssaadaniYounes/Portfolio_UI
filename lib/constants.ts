@@ -11,7 +11,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { GrCss3, GrMysql } from "react-icons/gr";
 import { LiaHtml5 } from "react-icons/lia";
-import { RiJavascriptLine } from "react-icons/ri";
+import { RiJavascriptLine, RiMediumLine } from "react-icons/ri";
 import {
   SiExpress,
   SiGraphql,
@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import {
   TbBrandFirebase,
+  TbBrandLinkedin,
   TbBrandMongodb,
   TbBrandNextjs,
   TbBrandPrisma,
@@ -222,17 +223,17 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: "LinkedIn",
     url: "https://linkedin.com/in/younes-essaadani",
-    icon: FaLinkedin,
+    icon: TbBrandLinkedin,
   },
   {
     name: "Github",
     url: "https://github.com/EssaadaniYounes",
-    icon: FaSquareGithub,
+    icon: FiGithub,
   },
   {
-    name: "Facebook",
-    url: "https://www.facebook.com/profile.php?id=61553810068238",
-    icon: FaFacebookSquare,
+    name: "Medium",
+    url: "https://medium.com/@essaadani.yo",
+    icon: RiMediumLine,
   },
 ];
 
