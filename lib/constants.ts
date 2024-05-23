@@ -253,6 +253,14 @@ export const ARTICLES: Article[] = [
       "Are you tired of waiting for your data to be retrieved from the database every time a request hits your server? Opening connections, executing queries — it can slow down your application. But what if there was a way to bypass all that?",
     url: "https://medium.com/@essaadani.yo/improve-your-application-performance-nodejs-and-redis-ed90cbce0763",
   },
+  {
+    thumbnail:
+      "	https://miro.medium.com/v2/resize:fit:828/format:webp/1*DVEiFluXcSZ05JIUWMrWRg.png",
+    title: "Laravel : Custom properties in your pagination response",
+    description:
+      "In some cases you want to add custom properties to your pagination response in laravel but ",
+    url: "https://medium.com/@essaadani.yo/laravel-custom-properties-in-your-pagination-response-bb0e8739f1e8",
+  },
 ];
 
 export const MENU_LINKS: MenuLink[] = [
