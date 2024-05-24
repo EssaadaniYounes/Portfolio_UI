@@ -255,7 +255,7 @@ export const ARTICLES: Article[] = [
   },
   {
     thumbnail:
-      "	https://miro.medium.com/v2/resize:fit:828/format:webp/1*DVEiFluXcSZ05JIUWMrWRg.png",
+      "	https://miro.medium.com/v2/resize:fit:786/format:webp/1*DVEiFluXcSZ05JIUWMrWRg.png",
     title: "Laravel : Custom properties in your pagination response",
     description:
       "In some cases you want to add custom properties to your pagination response in laravel but ",
