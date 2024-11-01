@@ -10,11 +10,12 @@ import { DiDocker, DiPostgresql } from "react-icons/di";
 import {
   FaFacebookSquare,
   FaGit,
+  FaLaravel,
   FaLinkedin,
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
-import { FaSquareGithub } from "react-icons/fa6";
+import { FaPhp, FaSquareGithub } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { GrCss3, GrMysql } from "react-icons/gr";
 import { LiaHtml5 } from "react-icons/lia";
@@ -37,6 +38,21 @@ import {
 
 export const PROJECTS: Project[] = [
   {
+    name: "Lofty Service CRM",
+    description:
+      "A platform to help lofty team manage their client's orders, sourcing, invoicicng, payments, etc.",
+    technologies: [
+      "Laravel",
+      "Redis",
+      "VueJs2",
+      "MySQL",
+      "S3",
+      "Laravel Vapor",
+    ],
+    imageUrl: "/images/lofty.png",
+    url: "https://app.loftyservice.com/",
+  },
+  {
     name: "PersonaNet",
     description:
       "A social media platfrom that allows users to engage 24/7 with other people without having to connect their persona will do the work for them.",
@@ -52,23 +68,15 @@ export const PROJECTS: Project[] = [
     url: "https://personanet.app/",
   },
   {
-    name: "Hash tag maker",
-    description:
-      "A hash tag maker that use AI to search trough a target platform and retrieve the most used tags based on the topic you intrested in.",
-    technologies: ["NextJs", "Typescript", "Langchain"],
-    imageUrl: "/images/hashtag-maker.png",
-    url: "https://hashtag-maker.vercel.app/",
-  },
-  {
     name: "School Portal",
     description:
       "A school management system that allows users to manage their school, students, teachers, payments, etc.",
     technologies: [
-      "Java",
-      "Spring Boot",
+      "Laravel",
+      "ReactJs",
       "Redis",
       "MySql",
-      "Spring security",
+      "Passport",
       "Firebase storage",
     ],
     imageUrl: "/images/SchoolManagment.png",
@@ -85,11 +93,33 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Lofty Service",
+    jobTitle: "Full Stack Developer",
+    location: "Marrakech, Morocco",
+    startDate: "May 2024",
+    endDate: "Present",
+    description: [
+      "Developed a comprehensive e-commerce Customer Relationship Management (CRM) system",
+      "Implemented MySQL for efficient data storage and management",
+      "Developed responsive front-end using Vue.js and Bootstrap for improved user experience",
+      "Implemented Two Factor Authentication with Google Authenticator",
+      "Optimised slow-performing database queries and Implemented database indexing, resulting in a 60% improvement in overall system performance",
+      "Led initiative to refactor existing codebase, implementing SOLID principles, And design patterns",
+      "Collaborated with finance, sourcing department team to develop and integrate a comprehensive finance, sourcing modules",
+      "Conducted regular code reviews using Bitbucket pull request feature",
+      "Lead a drop shipping module making sure all features are well developed and following best practices",
+      "Implemented logging and monitoring solutions to track system performance",
+      "Collaborated with UX/UI designers, QA team to improve user experience and app stability",
+      "Participated in sprint planning and retrospectives to continuously improve development processes",
+      "Shared knowledge with team members through internal training sessions",
+    ],
+  },
+  {
     company: "AfterFlea OS Conversational AI",
     jobTitle: "Full Stack Developer",
     location: "San Francisco, Remote",
     startDate: "August 2023",
-    endDate: "Present",
+    endDate: "May 2024",
     description: [
       "Spearheaded the development of a persona-based social media application using the MERN stack, facilitating personalized connections and matchings.",
       " Employed containerization with Docker, streamlining deployment processes and ensuring consistency acrossenvironments.",
@@ -144,6 +174,14 @@ storage solutions for documents and media assets.`,
 ];
 
 export const SKILLS: Skill[] = [
+  {
+    name: "Laravel",
+    icon: FaLaravel,
+  },
+  {
+    name: "PHP",
+    icon: FaPhp,
+  },
   {
     name: "React",
     icon: FaReact,
@@ -245,6 +283,30 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const ARTICLES: Article[] = [
+  {
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*aBo9Zj7mczfnIde4RkeMAg.png",
+    title: "Program to interface NOT implementation",
+    description:
+      "Program to an Interface, Not an Implementation is a fundamental software design principle that enhances flexibility and maintainability. By coding to interfaces rather than specific implementations, developers decouple systems from their dependencies, making the code more modular, testable, and scalable. This approach aligns with key design principles like the Open/Closed Principle, allowing systems to be easily extended without altering existing code. In this article, we’ll explore how this principle works and why it’s essential for building robust software.",
+    url: "https://medium.com/@essaadani.yo/program-to-interface-not-implementation-29154de5c5b4",
+  },
+  {
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*vtejEEwfdNA7sbOMYVuilw.jpeg",
+    title: "Laravel Design patterns: #Strategy",
+    description:
+      "In software development, design patterns and principles are essential tools that enable developers to write clean, maintainable, and scalable code. Among these, the Strategy Design Pattern stand out for it’s ability to enhance the flexibility and robustness of applications. This article explores how to implement the Strategy Design Pattern in Laravel while adhering to the Open/Closed Principle.",
+    url: "https://medium.com/@essaadani.yo/laravel-design-patterns-strategy-4320b4479844",
+  },
+  {
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*_J5Kt_MOFXMe53JyOpIQ-w.png",
+    title: "Design Patterns in Laravel #Service",
+    description:
+      "In the landscape of modern web development, design patterns play a crucial role in crafting maintainable, scalable, and efficient applications. Among these patterns, the Service Design Pattern is particularly popular in the Laravel ecosystem, offering a clean separation of concerns and promoting reusability. This article explores the Service Design Pattern in the context of Laravel, highlighting its benefits, implementation, and best practices.",
+    url: "https://medium.com/@essaadani.yo/design-patterns-in-laravel-service-76645d7afe19",
+  },
   {
     thumbnail:
       "https://miro.medium.com/v2/resize:fit:786/format:webp/1*ty42wOKdun7WRnAZhmuhEQ.png",

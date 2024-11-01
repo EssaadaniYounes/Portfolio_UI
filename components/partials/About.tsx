@@ -78,7 +78,7 @@ function About() {
           <a
             rel="noreferrer"
             target="_blank"
-            href="/assets/pdfs/Resume.pdf"
+            href="/assets/pdfs/CV.pdf"
             className="text-sm"
           >
             <Download />

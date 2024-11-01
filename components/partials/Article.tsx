@@ -9,7 +9,7 @@ export default function Article({ article }: { article: ArticleType }) {
       <CardContent className="flex flex-col items-start gap-4">
         <Image
           alt="article 1"
-          className="rounded-md w-full aspect-[16/9] object-cover mt-2"
+          className="rounded-md w-full aspect-[16/9] object-cover mt-2 bg-white"
           height={225}
           src={article.thumbnail}
           width={400}
