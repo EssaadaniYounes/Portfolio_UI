@@ -21,12 +21,12 @@ export default function Experiences() {
                     className="group relative flex items-start p-4 md:p-10 rounded-xl cursor-pointer
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
-                    <div className="ml-4">
+                    <div className="">
                         <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
                             ICOS
                         </h2>
 
-                        <ul className="mt-4 list-disc ml-5 [&>li]:mt-2  [&>li]:text-gray-400 [&>li]:font-medium  [&>li]:text-sm md:[&>li]:text-xl tracking-wider">
+                        <ul className="mt-4 list-disc [&>li]:mt-2 p-4 [&>li]:text-gray-400 [&>li]:font-medium  [&>li]:text-sm md:[&>li]:text-xl tracking-wider">
                             <li>Built a production-grade Angular claims system</li>
                             <li>Improved performance with lazy loading and async patterns</li>
                             <li>Implemented centralized state management and CI/CD workflows</li>
@@ -42,12 +42,12 @@ export default function Experiences() {
                     className="group relative flex items-start p-4 md:p-10 rounded-xl cursor-pointer
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
-                    <div className="ml-4">
+                    <div className="">
                         <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
                             SuperIntro
                         </h2>
 
-                        <ul className="mt-4 list-disc ml-5
+                        <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
                    [&>li]:text-gray-400
                    [&>li]:font-medium
@@ -71,12 +71,12 @@ export default function Experiences() {
                     className="group relative flex items-start p-4 md:p-10 rounded-xl cursor-pointer
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
-                    <div className="ml-4">
+                    <div className="">
                         <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
                             Dropify.shop
                         </h2>
 
-                        <ul className="mt-4 list-disc ml-5
+                        <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
                    [&>li]:text-gray-400
                    [&>li]:font-medium
@@ -100,12 +100,12 @@ export default function Experiences() {
                     className="group relative flex items-start p-4 md:p-10 rounded-xl cursor-pointer
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
-                    <div className="ml-4">
+                    <div className="">
                         <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
                             Lofty Service
                         </h2>
 
-                        <ul className="mt-4 list-disc ml-5
+                        <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
                    [&>li]:text-gray-400
                    [&>li]:font-medium
@@ -129,12 +129,12 @@ export default function Experiences() {
                     className="group relative flex items-start p-4 md:p-10 rounded-xl cursor-pointer
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
-                    <div className="ml-4">
+                    <div className="">
                         <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
                             SuperIntro
                         </h2>
 
-                        <ul className="mt-4 list-disc ml-5
+                        <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
                    [&>li]:text-gray-400
                    [&>li]:font-medium

@@ -39,11 +39,11 @@ export default function RootLayout({
             variants={fadeDown as any}
             className="mb-24"
           >
-            <div className="flex items-start justify-center flex-col md:flex-row gap-8 mt-12">
-              <div className="md:sticky md:top-16  p-2 md:p-6">
+            <div className="flex items-start justify-center flex-col md:flex-row gap-8 mt-12 p-6">
+              <div className="md:sticky md:top-16">
                 <LeftSideCard />
               </div>
-              <div className="space-y-16 md:space-y-32 p-2 md:p-6  max-w-2xl">
+              <div className="space-y-16 md:space-y-32 max-w-2xl">
                 {children}
               </div>
             </div>

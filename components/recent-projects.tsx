@@ -18,7 +18,7 @@ export default function RecentProjects() {
         <div className="space-y-4 mt-4">
             <Link href="https://superintro.me" className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/superintro.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
-                <div className="ml-4">
+                <div className="">
                     <h2 className="text-2xl font-bold">Superintro</h2>
                     <p className="mt-2 text-gray-500 font-medium text-lg max-w-sm">
                         A AI platform for matching and connecting people.
@@ -30,7 +30,7 @@ export default function RecentProjects() {
             </Link>
             <Link href="https://dropify.shop" className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
-                <div className="ml-4">
+                <div className="">
                     <h2 className="text-2xl font-bold">Dropify.shop</h2>
                     <p className="mt-2 text-gray-500 font-medium text-lg max-w-sm">
                         A SaaS platform for managing e-commerce stores.
@@ -42,7 +42,7 @@ export default function RecentProjects() {
             </Link>
             <Link href="https://loftyservice.com" className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
-                <div className="ml-4">
+                <div className="">
                     <h2 className="text-2xl font-bold">Lofty service</h2>
                     <p className="mt-2 text-gray-500 font-medium text-lg max-w-sm">
                         A CRM platform for managing e-commerce stores.

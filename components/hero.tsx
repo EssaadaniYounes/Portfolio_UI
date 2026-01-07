@@ -14,7 +14,7 @@ export const Hero = () => {
         <h1 className={cn("text-6xl md:text-9xl font-bold uppercase", poppins.className)}>
             Software <br /> <span className="text-[#b6b4bd33]">Engineer</span>
         </h1>
-        <p className="mt-6 ml-2 text-[#998f8f] font-semibold text-xl leading-relaxed md:text-start">
+        <p className="mt-6 text-[#998f8f] font-semibold text-xl leading-relaxed md:text-start">
             I design and build scalable SaaS and AI-powered systems with a focus <br />
             on clarity, performance, and long-term maintainability.
         </p>
@@ -24,7 +24,7 @@ export const Hero = () => {
                 <span className="text-2xl md:text-8xl font-bold">
                     +3
                 </span>
-                <p className={cn("text-[#998f8f] text-lg leading-relaxed uppercase", poppins.className)}>
+                <p className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase", poppins.className)}>
                     years of <br /> experience
                 </p>
             </div>
@@ -32,15 +32,15 @@ export const Hero = () => {
                 <span className="text-2xl md:text-8xl font-bold">
                     +36
                 </span>
-                <p className={cn("text-[#998f8f] text-lg leading-relaxed uppercase", poppins.className)}>
-                    Projects completed
+                <p className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase", poppins.className)}>
+                    Projects <br /> completed
                 </p>
             </div>
             <div>
                 <span className="text-2xl md:text-8xl font-bold">
                     +6
                 </span>
-                <p className={cn("text-[#998f8f] text-lg leading-relaxed uppercase", poppins.className)}>
+                <p className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase", poppins.className)}>
                     Companies
                 </p>
             </div>
