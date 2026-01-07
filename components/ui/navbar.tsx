@@ -1,5 +1,4 @@
 import { Download } from "lucide-react";
-import { ThemeToggler } from "../partials/theme-toggler";
 import { Button } from "./button";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -40,7 +39,6 @@ export function Navbar() {
           Resume
         </a> */}
       </nav>
-      <ThemeToggler />
     </div>
   );
 }
