@@ -22,8 +22,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/nextjs.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>Nextjs</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>Nextjs</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             React framework
                         </span>
                     </div>
@@ -31,8 +31,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/nest.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>Nestjs</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>Nestjs</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             Node framework
                         </span>
                     </div>
@@ -40,8 +40,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/laravel.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>Laravel</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>Laravel</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             PHP framework
                         </span>
                     </div>
@@ -49,8 +49,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/langchain.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>Langchain</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>Langchain</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             AI framework
                         </span>
                     </div>
@@ -58,8 +58,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/postgresql.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>PostgreSQL</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>PostgreSQL</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             Database
                         </span>
                     </div>
@@ -67,8 +67,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/docker.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>Docker</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>Docker</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             Containerization
                         </span>
                     </div>
@@ -76,8 +76,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/tailwindcss.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>TailwindCSS</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>TailwindCSS</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             CSS framework
                         </span>
                     </div>
@@ -85,8 +85,8 @@ export default function Stacks() {
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/stripe.svg'} alt="profile" width={90} height={100} className={'p-2 rounded-md bg-white'} />
                     <div className="space-y-2">
-                        <h5 className={cn("text-3xl font-bold  text-white", poppins.className)}>Stripe</h5>
-                        <span className={cn("text-[#998f8f] text-lg leading-relaxed uppercase block", poppins.className)}>
+                        <h5 className={cn("text-xl md:text-3xl font-bold  text-white", poppins.className)}>Stripe</h5>
+                        <span className={cn("text-[#998f8f] text-sm md:text-lg leading-relaxed uppercase block", poppins.className)}>
                             Payment gateway
                         </span>
                     </div>
