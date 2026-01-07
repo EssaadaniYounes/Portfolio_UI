@@ -14,7 +14,7 @@ export default function Contact() {
 
     return <FramerWrapper>
         <h1 className={cn("text-6xl md:text-9xl font-bold uppercase mb-16", poppins.className)}>
-            Let's <br /> <span className="text-[#b6b4bd33]">Connect</span>
+            Let{`'`}s <br /> <span className="text-[#b6b4bd33]">Connect</span>
         </h1>
         <form onSubmit={handleSubmit} className={cn("space-y-10 mt-4", poppins.className)}>
             <div className="flex items-start justify-between gap-4">
