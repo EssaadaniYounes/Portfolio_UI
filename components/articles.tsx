@@ -1,0 +1,35 @@
+import { cn } from "@/lib/utils";
+import { Poppins } from "next/font/google";
+import FramerWrapper from "./providers/framer-wrapper";
+import Image from "next/image";
+import { MoveUpRight } from "lucide-react";
+import Link from "next/link";
+import { ARTICLES } from "@/lib/constants";
+const poppins = Poppins({
+    weight: ["600", "500", "700", "800"],
+    subsets: ["latin-ext"],
+    display: "swap",
+})
+export default function Articles() {
+    return <FramerWrapper>
+        <h1 className={cn("text-6xl md:text-9xl font-bold uppercase", poppins.className)}>
+            Articles <br /> <span className="text-[#b6b4bd33]">& Blogs</span>
+        </h1>
+
+        <div className="space-y-4 mt-4">
+            {ARTICLES.map((article) => (
+                <Link href={article.url} key={article.url} className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+                    <div className="ml-4">
+                        <h2 className="text-2xl font-bold">{article.title}</h2>
+                        <p className="mt-2 text-gray-500 font-medium text-lg line-clamp-3 tracking-widest">
+                            {article.description}
+                        </p>
+                    </div>
+                    <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
+                        <MoveUpRight size={32} color="#334df5ff" />
+                    </span>
+                </Link>
+            ))}
+        </div>
+    </FramerWrapper>
+}

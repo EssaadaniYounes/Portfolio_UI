@@ -1,16 +1,12 @@
 import Articles from "@/components/articles";
 import Contact from "@/components/contact";
 import Experiences from "@/components/experiences";
-import { Hero } from "@/components/hero";
-import RecentProjects from "@/components/recent-projects";
 import Stacks from "@/components/stacks";
 import React from "react";
 
 export default function Home() {
   return (
     <React.Fragment>
-      <Hero />
-      <RecentProjects />
       <Experiences />
       <Stacks />
       <Articles />

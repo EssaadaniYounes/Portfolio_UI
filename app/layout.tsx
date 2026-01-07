@@ -1,53 +1,54 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+"use client";
+import Link from "next/link";
 import "./globals.css";
-
-import { Judson } from "next/font/google";
-import { Libre_Franklin } from "next/font/google";
-import { Navbar } from "@/components/ui/navbar";
-import { ThemeProvider } from "@/components/providers/theme-provider";
-
-const judson = Judson({
-  display: "swap",
-  weight: ["700"],
-  subsets: ["latin"],
-  variable: "--font-judson",
-});
-const libre_franklin = Libre_Franklin({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-libre_franklin",
-});
-
-export const metadata: Metadata = {
-  title: "Younes Essaadani | Portfolio",
-  description:
-    "Unlock the full potential of web development with our comprehensive resources and insights. Whether you're a seasoned full-stack developer or diving into the world of MERN development, our platform offers expert guidance, tutorials, and tools to elevate your skills and projects to new heights.",
-};
-
+import { BriefcaseBusinessIcon, Folder, FolderIcon, HomeIcon, SquarePenIcon, WrenchIcon } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeDown, fadeUp } from "@/lib/motion";
+import { LeftSideCard } from "@/components/left-side-card";
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html className="scroll-smooth " lang="en">
-      <body
-        className={
-          judson.variable +
-          libre_franklin.variable +
-          "bg-white dark:bg-gray-900"
-        }
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-        </ThemeProvider>
+    <html lang="en">
+      <body className="bg-[#151312] text-neutral-100 antialiased">
+        <main className="mx-auto max-w-8xl py-6">
+          <div className="flex items-center justify-center w-full bg-red">
+            <div className="flex items-center space-x-4 md:space-x-9 justify-center bg-[#ffffff08] p-4 px-8 md:px-12 rounded-lg">
+              <Link href={"/"}>
+                <HomeIcon size={28} />
+              </Link>
+              <Link href={"/projects"}>
+                <FolderIcon size={28} />
+              </Link>
+              <Link href={"/experience"}>
+                <BriefcaseBusinessIcon size={28} />
+              </Link>
+              <Link href={"/skills"}>
+                <WrenchIcon size={28} />
+              </Link>
+              <Link href={"/contact"}>
+                <SquarePenIcon size={28} />
+              </Link>
+            </div>
+          </div>
+          <motion.section
+            initial="hidden"
+            animate="visible"
+            variants={fadeDown as any}
+            className="mb-24"
+          >
+            <div className="flex items-start justify-center flex-col md:flex-row gap-8 mt-12">
+              <div className="md:sticky md:top-16  p-2 md:p-6">
+                <LeftSideCard />
+              </div>
+              <div className="space-y-16 md:space-y-32 p-2 md:p-6  max-w-2xl">
+                {children}
+              </div>
+            </div>
+          </motion.section>
+        </main>
       </body>
     </html>
   );
