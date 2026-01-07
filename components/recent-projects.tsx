@@ -16,7 +16,7 @@ export default function RecentProjects() {
         </h1>
 
         <div className="space-y-4 mt-4">
-            <Link href="https://superintro.me" className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+            <Link href="https://superintro.me" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/superintro.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Superintro</h2>
@@ -24,11 +24,11 @@ export default function RecentProjects() {
                         A AI platform for matching and connecting people.
                     </p>
                 </div>
-                <span className="absolute right-8 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
+                <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
                     <MoveUpRight size={32} color="#334df5ff"/>
                 </span>
             </Link>
-            <Link href="https://dropify.shop" className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+            <Link href="https://dropify.shop" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Dropify.shop</h2>
@@ -36,11 +36,11 @@ export default function RecentProjects() {
                         A SaaS platform for managing e-commerce stores.
                     </p>
                 </div>
-                <span className="absolute right-8 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
+                <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
                     <MoveUpRight size={32} color="#334df5ff"/>
                 </span>
             </Link>
-            <Link href="https://loftyservice.com" className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+            <Link href="https://loftyservice.com" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Lofty service</h2>
@@ -48,7 +48,7 @@ export default function RecentProjects() {
                         A CRM platform for managing e-commerce stores.
                     </p>
                 </div>
-                <span className="absolute right-8 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
+                <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
                     <MoveUpRight size={32} color="#334df5ff"/>
                 </span>
             </Link>
