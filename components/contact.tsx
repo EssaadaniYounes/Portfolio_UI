@@ -27,7 +27,7 @@ export default function Contact() {
                         type="text"
                         placeholder="Full name"
                         id="name"
-                        className="p-2 w-full rounded border bg-[#b6b4bd33] outline-none border-transparent focus:border-[#334df5ff mb-2] focus:outline-none"
+                        className="p-2 w-full rounded border bg-[#b6b4bd33] outline-none border-transparent focus:border-[#334df5ff] mb-2 focus:outline-none"
                     />
                     <ValidationError prefix="Name" field="name" errors={state.errors} className="text-sm text-red-500" />
                 </div>
