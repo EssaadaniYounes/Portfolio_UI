@@ -10,7 +10,7 @@ const poppins = Poppins({
     display: "swap",
 })
 export default function Contact() {
-    const [state, handleSubmit] = useForm("mlgdqnng");
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMS_PREE_FORM_ID!);
 
     return <FramerWrapper>
         <h1 className={cn("text-6xl md:text-9xl font-bold uppercase mb-16", poppins.className)}>
