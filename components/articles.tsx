@@ -20,8 +20,8 @@ export default function Articles() {
             {ARTICLES.map((article) => (
                 <Link href={article.url} key={article.url} className="relative flex items-center p-2 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                     <div className="ml-4">
-                        <h2 className="text-2xl font-bold">{article.title}</h2>
-                        <p className="mt-2 text-gray-500 font-medium text-lg line-clamp-3 tracking-widest">
+                        <h2 className="text-xl md:text-2xl font-bold">{article.title}</h2>
+                        <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg line-clamp-3 tracking-widest">
                             {article.description}
                         </p>
                     </div>

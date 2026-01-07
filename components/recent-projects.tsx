@@ -20,8 +20,8 @@ export default function RecentProjects() {
                 <Image src={'/images/superintro.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Superintro</h2>
-                    <p className="mt-2 text-gray-500 font-medium text-lg max-w-sm">
-                        A AI platform for matching and connecting people.
+                    <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
+                        A AI platform for matching <br /> and connecting people.
                     </p>
                 </div>
                 <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
@@ -32,8 +32,8 @@ export default function RecentProjects() {
                 <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Dropify.shop</h2>
-                    <p className="mt-2 text-gray-500 font-medium text-lg max-w-sm">
-                        A SaaS platform for managing e-commerce stores.
+                    <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
+                        A SaaS platform for <br /> managing e-commerce stores.
                     </p>
                 </div>
                 <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
@@ -44,8 +44,8 @@ export default function RecentProjects() {
                 <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Lofty service</h2>
-                    <p className="mt-2 text-gray-500 font-medium text-lg max-w-sm">
-                        A CRM platform for managing e-commerce stores.
+                    <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
+                        A CRM platform helping <br /> sellers in GCC.
                     </p>
                 </div>
                 <span className="absolute right-4 top-8 group-hover:translate-x-2 group-hover:-translate-y-2 duration-150 ease-out">
