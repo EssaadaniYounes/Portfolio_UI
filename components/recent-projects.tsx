@@ -41,7 +41,7 @@ export default function RecentProjects() {
                 </span>
             </Link>
             <Link href="https://loftyservice.com" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
-                <Image src={'/images/dropify.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
+                <Image src={'/images/lofty.png'} alt="profile" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h2 className="text-2xl font-bold">Lofty service</h2>
                     <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
