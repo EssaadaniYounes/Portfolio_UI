@@ -5,6 +5,7 @@ import { BriefcaseBusinessIcon, Folder, FolderIcon, HomeIcon, SquarePenIcon, Wre
 import { motion } from "framer-motion";
 import { fadeDown, fadeUp } from "@/lib/motion";
 import { LeftSideCard } from "@/components/left-side-card";
+import CalEmbed from "@/components/cal-embed";
 export default function RootLayout({
   children,
 }: {
@@ -47,6 +48,7 @@ export default function RootLayout({
                 {children}
               </div>
             </div>
+            <CalEmbed />
           </motion.section>
         </main>
       </body>

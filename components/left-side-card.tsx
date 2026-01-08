@@ -16,7 +16,7 @@ export function LeftSideCard() {
             Essaadani Younes
         </h2>
         <p className="mt-12 text-gray-500 font-medium text-lg max-w-sm">
-            I build SaaS products and AI systems that actually ship.
+            I build SaaS products and AI systems that actually ship, for Agencies, Founders & Startups.
         </p>
 
         <div className="flex gap-6 mt-12">

@@ -4,6 +4,8 @@ import { useForm, ValidationError } from '@formspree/react';
 import FramerWrapper from "./providers/framer-wrapper";
 import { Poppins } from "next/font/google";
 import { useState } from "react";
+import CalendlyEmbed from "./calendly-embed";
+import CalEmbed from "./cal-embed";
 const poppins = Poppins({
     weight: ["600", "500", "700", "800"],
     subsets: ["latin-ext"],
