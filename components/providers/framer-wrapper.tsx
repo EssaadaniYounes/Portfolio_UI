@@ -8,10 +8,14 @@ export default function FramerWrapper({
     children: React.ReactNode;
 }) {
     return <motion.section
-        variants={fadeDown as any}
+        variants={fadeDown}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{
+            once: true,
+            amount: 0.1, 
+            margin: "-100px", 
+        }}
         className="mb-24"
     >
         {children}

@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -7,11 +9,18 @@ export const fadeUp = {
   },
 };
 
-export const fadeDown = {
-  hidden: { opacity: 0, y: -20 },
+export const fadeDown: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 18, 
+  },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
   },
+
 };

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Layers, MoveRight } from "lucide-react";
+import { Layers, MoveRight, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -43,7 +43,7 @@ export const Hero = () => {
                 </div>
             </div>
 
-            <div className="mt-12 flex gap-6 items-end">
+            <div className="mt-12 flex flex-col md:flex-row gap-6 md:items-end">
                 <div className="relative p-6 w-[350px] h-[220px]">
                     <Image src={'/assets/svgs/wave-1.svg'} alt="profile" width={350} height={180} className={'rounded-md absolute inset-0 -z-10'} />
                     <Layers size={32} />
@@ -54,12 +54,28 @@ export const Hero = () => {
                         <MoveRight size={32} className="" />
                     </Link>
                 </div>
-                <div className="">
-                    <Button className="mt-6 block w-60 bg-blue-500 hover:bg-blue-600">
+                <div className="mt-6 flex md:flex-col gap-4 w-80 md:w-60">
+                    <Link
+                        href="#booking"
+                        className="w-full group relative inline-flex items-center justify-center h-12 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium shadow-[0_0_30px_rgba(59,130,246,0.35)] transition-all duration-300 hover:shadow-[0_0_45px_rgba(59,130,246,0.55)] hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                        <span className="mr-2">Book a call</span>
+                        <MoveRight
+                            size={18}
+                            className="transition-transform duration-300 group-hover:translate-x-1"
+                        />
+                    </Link>
 
-                        Hire me
-                    </Button>
-                    <Button className="mt-6 w-60 bg-[#b6b4bd33] hover:bg-[#b6b4bd33]">Hire me</Button>
+                    <Link
+                        href="/#contact"
+                        className="w-full inline-flex items-center justify-center h-12 rounded-xl border border-white/15 bg-white/5 text-white/80 backdrop-blur transition-all duration-300 hover:bg-white/10 hover:text-white"
+                    >
+                        <span className="mr-2">Contact me</span>
+                        <PhoneCall
+                            size={18}
+                            className="transition-transform duration-300 group-hover:translate-x-1"
+                        />
+                    </Link>
                 </div>
             </div>
         </div>

@@ -91,7 +91,7 @@ export default function RootLayout({
               <Link href={"/projects"}>
                 <FolderIcon size={28} />
               </Link>
-              <Link href={"/projects"}>
+              <Link href={"/experience"}>
                 <BriefcaseBusinessIcon size={28} />
               </Link>
               <Link href={"/skills"}>
