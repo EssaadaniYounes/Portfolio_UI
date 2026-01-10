@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <React.Fragment>
-      <SeoJsonLd />
       <Hero />
       <RecentProjects />
       <Experiences />
       <Stacks />
       <Articles />
       <Contact />
+      <SeoJsonLd />
     </React.Fragment>
   );
 }

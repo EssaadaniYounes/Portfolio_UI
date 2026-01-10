@@ -1,18 +1,11 @@
 import { cn } from "@/lib/utils";
-import { Poppins } from "next/font/google";
 import FramerWrapper from "./providers/framer-wrapper";
-import Image from "next/image";
 import { MoveUpRight } from "lucide-react";
 import Link from "next/link";
 import { ARTICLES } from "@/lib/constants";
-const poppins = Poppins({
-    weight: ["600", "500", "700", "800"],
-    subsets: ["latin-ext"],
-    display: "swap",
-})
 export default function Articles() {
     return <FramerWrapper>
-        <h1 className={cn("text-6xl md:text-9xl font-bold uppercase", poppins.className)}>
+        <h1 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
             Articles <br /> <span className="text-[#b6b4bd33]">& Blogs</span>
         </h1>
 

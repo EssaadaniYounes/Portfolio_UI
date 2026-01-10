@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function SeoJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -16,7 +18,8 @@ export default function SeoJsonLd() {
   };
 
   return (
-    <script
+    <Script
+      id="json-ld"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />

@@ -1,21 +1,14 @@
 import { cn } from "@/lib/utils";
 import FramerWrapper from "./providers/framer-wrapper";
-import { Poppins } from "next/font/google";
 import Link from "next/link";
-import { MoveUpRight } from "lucide-react";
-const poppins = Poppins({
-    weight: ["600", "500", "700", "800"],
-    subsets: ["latin-ext"],
-    display: "swap",
-})
 export default function Experiences() {
     return (
         <FramerWrapper>
-            <h1 className={cn("text-6xl md:text-9xl font-bold uppercase", poppins.className)}>
+            <h1 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
                 +3 years of <br /> <span className="text-[#b6b4bd33]">Experience</span>
             </h1>
 
-            <div className={cn("space-y-4 mt-4", poppins.className)}>
+            <div className={cn("space-y-4 mt-4")}>
                 <Link
                     href="#"
                     className="group relative flex items-start p-4 md:p-10 rounded-xl cursor-pointer

@@ -2,23 +2,14 @@
 import { cn } from "@/lib/utils";
 import { useForm, ValidationError } from '@formspree/react';
 import FramerWrapper from "./providers/framer-wrapper";
-import { Poppins } from "next/font/google";
-import { useState } from "react";
-import CalendlyEmbed from "./calendly-embed";
-import CalEmbed from "./cal-embed";
-const poppins = Poppins({
-    weight: ["600", "500", "700", "800"],
-    subsets: ["latin-ext"],
-    display: "swap",
-})
 export default function Contact() {
     const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMS_PREE_FORM_ID!);
 
     return <FramerWrapper>
-        <h1 className={cn("text-6xl md:text-9xl font-bold uppercase mb-16", poppins.className)}>
+        <h1 className={cn("text-6xl md:text-9xl font-bold uppercase mb-16")}>
             Let{`'`}s <br /> <span className="text-[#b6b4bd33]">Connect</span>
         </h1>
-        <form onSubmit={handleSubmit} className={cn("space-y-10 mt-4", poppins.className)}>
+        <form onSubmit={handleSubmit} className={cn("space-y-10 mt-4")}>
             <div className="flex items-start justify-between gap-4">
                 <div className="w-full">
                     <label htmlFor="name" className="block text-[#888] my-2">
