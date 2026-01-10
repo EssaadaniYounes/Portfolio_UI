@@ -85,19 +85,19 @@ export default function RootLayout({
         <main className="mx-auto max-w-8xl py-6">
           <div className="flex items-center justify-center w-full bg-red">
             <div className="flex items-center space-x-4 md:space-x-9 justify-center bg-[#ffffff08] p-4 px-8 md:px-12 rounded-lg">
-              <Link href={"/"}>
+              <Link href={"/"} aria-label="Home">
                 <HomeIcon size={28} />
               </Link>
-              <Link href={"/projects"}>
+              <Link href={"/projects"} aria-label="Projects">
                 <FolderIcon size={28} />
               </Link>
-              <Link href={"/experience"}>
+              <Link href={"/experience"} aria-label="Experience">
                 <BriefcaseBusinessIcon size={28} />
               </Link>
-              <Link href={"/skills"}>
+              <Link href={"/skills"} aria-label="Skills">
                 <WrenchIcon size={28} />
               </Link>
-              <Link href={"/contact"}>
+              <Link href={"/contact"} aria-label="Contact">
                 <SquarePenIcon size={28} />
               </Link>
             </div>

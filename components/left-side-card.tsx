@@ -1,4 +1,4 @@
-import { Facebook, InstagramIcon, LinkedinIcon, TwitterIcon, XIcon } from "lucide-react";
+import { Facebook, GithubIcon, InstagramIcon, LinkedinIcon, TwitterIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import FramerWrapper from "./providers/framer-wrapper";
@@ -17,17 +17,20 @@ export function LeftSideCard() {
             </p>
 
             <div className="flex gap-6 mt-12">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/younes-essaadani/" target="_blank" aria-label="My Linkedin">
                     <LinkedinIcon fill="#334df5ff" size={32} />
                 </a>
-                <a href="#">
+                <a href="https://web.facebook.com/essaadani.younes.2025" target="_blank" aria-label="My Facebook">
                     <Facebook fill="#334df5ff" size={32} />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/ka.mugiwara/" target="_blank" aria-label="My Instagram">
                     <InstagramIcon fill="#334df5ff" size={32} />
                 </a>
-                <a href="#">
+                <a href="https://x.com/EssaadaniYounes" target="_blank" aria-label="My Twitter">
                     <TwitterIcon fill="#334df5ff" size={32} />
+                </a>
+                <a href="https://github.com/EssaadaniYounes" target="_blank" aria-label="My Twitter">
+                    <GithubIcon fill="#334df5ff" size={32} />
                 </a>
             </div>
         </div>
