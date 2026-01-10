@@ -9,9 +9,9 @@ export function LeftSideCard() {
             <Image src="/assets/svgs/semi-circle-dots.svg" alt="profile" width={250} height={100} className="absolute -left-20 top-0" />
             <Image src="/assets/svgs/circle-with-fire.svg" alt="profile" width={250} height={100} className="absolute -left-32 bottom-[20%] -rotate-[0deg]" />
             <Image src={'/images/me.webp'} fetchPriority="high" loading="eager" alt="profile" width={300} height={250} className={'rounded-md'} />
-            <h2 className="text-4xl my-2 font-extrabold capitalize text-gray-800 tracking-wider">
+            <h1 className="text-4xl my-2 font-extrabold capitalize text-gray-800 tracking-wider">
                 Essaadani Younes
-            </h2>
+            </h1>
             <p className="mt-12 text-gray-500 font-medium text-lg max-w-sm">
                 I build SaaS products and AI systems that actually ship, for Agencies, Founders & Startups.
             </p>

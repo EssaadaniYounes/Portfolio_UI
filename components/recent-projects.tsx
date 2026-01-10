@@ -5,15 +5,15 @@ import { MoveUpRight } from "lucide-react";
 import Link from "next/link";
 export default function RecentProjects() {
     return <FramerWrapper>
-        <h1 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
+        <h2 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
             Recent <br /> <span className="text-[#b6b4bd33]">Projects</span>
-        </h1>
+        </h2>
 
         <div className="space-y-4 mt-4">
             <Link href="https://superintro.me" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
-                <Image src={'/images/superintro.png'} loading="lazy" alt="profile" width={120} height={200} className={'rounded-md'}/>
+                <Image src={'/images/superintro.png'} loading="lazy" alt="AI SaaS platform for matching and connecting people" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
-                    <h2 className="text-2xl font-bold">Superintro</h2>
+                    <h3 className="text-2xl font-bold">Superintro</h3>
                     <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
                         A AI platform for matching <br /> and connecting people.
                     </p>
@@ -23,9 +23,9 @@ export default function RecentProjects() {
                 </span>
             </Link>
             <Link href="https://dropify.shop" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
-                <Image src={'/images/dropify.png'} loading="lazy" alt="profile" width={120} height={200} className={'rounded-md'}/>
+                <Image src={'/images/dropify.png'} loading="lazy" alt="A SaaS platform for managing e-commerce stores" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
-                    <h2 className="text-2xl font-bold">Dropify.shop</h2>
+                    <h3 className="text-2xl font-bold">Dropify.shop</h3>
                     <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
                         A SaaS platform for <br /> managing e-commerce stores.
                     </p>
@@ -35,9 +35,9 @@ export default function RecentProjects() {
                 </span>
             </Link>
             <Link href="https://loftyservice.com" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
-                <Image src={'/images/lofty.png'} loading="lazy" alt="profile" width={120} height={200} className={'rounded-md'}/>
+                <Image src={'/images/lofty.png'} loading="lazy" alt="A CRM platform helping sellers in GCC" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
-                    <h2 className="text-2xl font-bold">Lofty service</h2>
+                    <h3 className="text-2xl font-bold">Lofty service</h3>
                     <p className="mt-2 text-gray-500 font-medium text-sm md:text-lg max-w-sm">
                         A CRM platform helping <br /> sellers in GCC.
                     </p>

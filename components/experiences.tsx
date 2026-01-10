@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Experiences() {
     return (
         <FramerWrapper>
-            <h1 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
+            <h2 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
                 +3 years of <br /> <span className="text-[#b6b4bd33]">Experience</span>
-            </h1>
+            </h2>
 
             <div className={cn("space-y-4 mt-4")}>
                 <Link
@@ -15,9 +15,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h3 className="text-2xl md:text-5xl font-bold tracking-wider">
                             ICOS
-                        </h4>
+                        </h3>
 
                         <ul className="mt-4 list-disc [&>li]:mt-2 p-4 [&>li]:text-gray-400 [&>li]:font-medium  [&>li]:text-sm md:[&>li]:text-xl tracking-wider">
                             <li>Built a production-grade Angular claims system</li>
@@ -36,9 +36,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h3 className="text-2xl md:text-5xl font-bold tracking-wider">
                             SuperIntro
-                        </h4>
+                        </h3>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
@@ -65,9 +65,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h3 className="text-2xl md:text-5xl font-bold tracking-wider">
                             Dropify.shop
-                        </h4>
+                        </h3>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
@@ -94,9 +94,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h3 className="text-2xl md:text-5xl font-bold tracking-wider">
                             Lofty Service
-                        </h4>
+                        </h3>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
@@ -123,9 +123,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h3 className="text-2xl md:text-5xl font-bold tracking-wider">
                             SuperIntro
-                        </h4>
+                        </h3>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2

@@ -15,8 +15,8 @@ import { Analytics } from '@vercel/analytics/next';
 export const metadata: Metadata = {
   metadataBase: new URL("https://essaadani.dev"),
   title: {
-    default: "Younes Essaadani – Full Stack & AI Engineer",
-    template: "%s | Younes Essaadani",
+    default: "SaaS & Next.js Developer – Younes Essaadani",
+    template: "%s | SaaS & Next.js Developer – Younes Essaadani",
   },
   description:
     "Full Stack & AI Engineer building SaaS products, landing pages, and AI systems with Next.js, Node.js, and modern tools. Available for freelance and remote work.",

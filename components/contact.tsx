@@ -6,9 +6,9 @@ export default function Contact() {
     const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMS_PREE_FORM_ID!);
 
     return <FramerWrapper>
-        <h1 id="contact" className={cn("text-6xl md:text-9xl font-bold uppercase mb-16")}>
+        <h2 id="contact" className={cn("text-6xl md:text-9xl font-bold uppercase mb-16")}>
             Let{`'`}s <br /> <span className="text-[#b6b4bd33]">Connect</span>
-        </h1>
+        </h2>
         <form onSubmit={handleSubmit} className={cn("space-y-10 mt-4")}>
             <div className="flex items-start justify-between gap-4">
                 <div className="w-full">

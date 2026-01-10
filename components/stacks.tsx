@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function Stacks() {
     return (
         <FramerWrapper>
-            <h1 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
+            <h2 className={cn("text-6xl md:text-9xl font-bold uppercase")}>
                 Skills & <br /> <span className="text-[#b6b4bd33]">Tools</span>
-            </h1>
+            </h2>
             <div className="grid md:grid-cols-2 gap-12 mt-12 pl-4">
                 <div className="flex items-start gap-6">
                     <Image src={'/assets/svgs/nextjs.svg'} loading="lazy" alt="profile" width={65} height={100} className={'p-2 rounded-md bg-white'} />
