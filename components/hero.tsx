@@ -3,6 +3,7 @@ import { Layers, MoveRight } from "lucide-react";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const poppins = Poppins({
     weight: ["600", "500", "700", "800"],
@@ -46,7 +47,7 @@ export const Hero = () => {
             </div>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 flex gap-6 items-end">
             <div className="relative p-6 w-[350px] h-[220px]">
                 <Image src={'/assets/svgs/wave-1.svg'} alt="profile" width={350} height={180} className={'rounded-md absolute inset-0 -z-10'} />
                 <Layers size={32} />
@@ -56,6 +57,13 @@ export const Hero = () => {
                 <Link href={'/experience'} className="absolute right-5 bottom-0 border rounded-lg p-1.5 px-2">
                     <MoveRight size={32} className="" />
                 </Link>
+            </div>
+            <div className="">
+                <Button className="mt-6 block w-60 bg-blue-500 hover:bg-blue-600">
+                    
+                    Hire me
+                </Button>
+                <Button className="mt-6 w-60 bg-[#b6b4bd33] hover:bg-[#b6b4bd33]">Hire me</Button>
             </div>
         </div>
     </div>;

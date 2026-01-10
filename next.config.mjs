@@ -11,6 +11,7 @@ const nextConfig = {
         hostname: "app.loftyservice.com",
       },
     ],
+    formats: ["image/avif", "image/webp"],
   },
 };
 
