@@ -15,9 +15,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
                             ICOS
-                        </h2>
+                        </h4>
 
                         <ul className="mt-4 list-disc [&>li]:mt-2 p-4 [&>li]:text-gray-400 [&>li]:font-medium  [&>li]:text-sm md:[&>li]:text-xl tracking-wider">
                             <li>Built a production-grade Angular claims system</li>
@@ -36,9 +36,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
                             SuperIntro
-                        </h2>
+                        </h4>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
@@ -65,9 +65,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
                             Dropify.shop
-                        </h2>
+                        </h4>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
@@ -94,9 +94,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
                             Lofty Service
-                        </h2>
+                        </h4>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2
@@ -123,9 +123,9 @@ export default function Experiences() {
              hover:bg-[#b6b4bd0b] transition-colors duration-150"
                 >
                     <div className="">
-                        <h2 className="text-2xl md:text-5xl font-bold tracking-wider">
+                        <h4 className="text-2xl md:text-5xl font-bold tracking-wider">
                             SuperIntro
-                        </h2>
+                        </h4>
 
                         <ul className="mt-4 list-disc p-4
                    [&>li]:mt-2

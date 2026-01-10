@@ -47,10 +47,10 @@ export const Hero = () => {
                 <div className="relative p-6 w-[350px] h-[220px]">
                     <Image src={'/assets/svgs/wave-1.svg'} alt="profile" width={350} height={180} className={'rounded-md absolute inset-0 -z-10'} />
                     <Layers size={32} />
-                    <h4 className={cn("text-3xl font-light uppercase mt-6")}>
+                    <span className={cn("text-3xl font-light uppercase mt-6")}>
                         Scalable projects
-                    </h4>
-                    <Link href={'/experience'} className="absolute right-5 bottom-0 border rounded-lg p-1.5 px-2">
+                    </span>
+                    <Link aria-label="See my experience" href={'/experience'} className="absolute right-5 bottom-0 border rounded-lg p-1.5 px-2">
                         <MoveRight size={32} className="" />
                     </Link>
                 </div>

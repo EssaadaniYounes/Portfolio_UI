@@ -2,19 +2,16 @@ import Link from "next/link";
 import type { Metadata } from 'next'
 import "../globals.css";
 import { BriefcaseBusinessIcon, Folder, FolderIcon, HomeIcon, SquarePenIcon, WrenchIcon } from "lucide-react";
-import { motion } from "framer-motion";
-import { fadeDown, fadeUp } from "@/lib/motion";
 import { LeftSideCard } from "@/components/left-side-card";
 import CalEmbed from "@/components/cal-embed";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
-import FramerWrapper from "@/components/providers/framer-wrapper";
 const poppins = Poppins({
   weight: ["600", "500", "700", "800"],
   subsets: ["latin"],
   display: "swap",
 })
-
+import { Analytics } from '@vercel/analytics/next';
 export const metadata: Metadata = {
   metadataBase: new URL("https://essaadani.dev"),
   title: {
@@ -105,15 +102,16 @@ export default function RootLayout({
               </Link>
             </div>
           </div>
-            <div className="flex items-start justify-center flex-col md:flex-row gap-8 mt-12 p-6">
-              <div className="md:sticky md:top-16">
-                <LeftSideCard />
-              </div>
-              <div className="space-y-16 md:space-y-32 max-w-2xl">
-                {children}
-              </div>
+          <div className="flex items-start justify-center flex-col md:flex-row gap-8 mt-12 p-6">
+            <div className="md:sticky md:top-16">
+              <LeftSideCard />
             </div>
-            <CalEmbed />
+            <div className="space-y-16 md:space-y-32 max-w-2xl">
+              {children}
+            </div>
+          </div>
+          <CalEmbed />
+          <Analytics />
         </main>
       </body>
     </html>
