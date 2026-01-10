@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { BriefcaseBusinessIcon, Folder, FolderIcon, HomeIcon, SquarePenIcon, WrenchIcon } from "lucide-react";
 import { motion } from "framer-motion";
@@ -115,6 +116,7 @@ export default function RootLayout({
             </div>
             <CalEmbed />
         </main>
+        <Analytics />
       </body>
     </html>
   );
