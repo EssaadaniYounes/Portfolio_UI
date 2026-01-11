@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from 'next'
-import "../globals.css";
 import { BriefcaseBusinessIcon, Folder, FolderIcon, HomeIcon, SquarePenIcon, WrenchIcon } from "lucide-react";
 import { LeftSideCard } from "@/components/left-side-card";
 import CalEmbed from "@/components/cal-embed";
@@ -80,8 +79,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={cn("bg-[#151312] text-neutral-100 antialiased", poppins.className)}>
         <main className="mx-auto max-w-8xl py-6">
           <div className="flex items-center justify-center w-full bg-red">
             <div className="flex items-center space-x-4 md:space-x-9 justify-center bg-[#ffffff08] p-4 px-8 md:px-12 rounded-lg">
@@ -113,7 +110,5 @@ export default function RootLayout({
           <CalEmbed />
           <Analytics />
         </main>
-      </body>
-    </html>
   );
 }

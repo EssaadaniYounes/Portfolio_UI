@@ -347,3 +347,91 @@ export const MENU_LINKS: MenuLink[] = [
     url: "/#contact",
   },
 ];
+
+
+export type ProjectV2 = {
+  slug: string;
+  name: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string;
+  highlights: string[];
+  stack: string[];
+  metrics?: string[];
+};
+
+export const projects: ProjectV2[] = [
+  {
+    slug: "superintro",
+    name: "SuperIntro",
+    role: "Full Stack Engineer",
+    period: "Nov 2024 – Present",
+    location: "Remote · US-based startup",
+    description:
+      "An AI-powered relationship and networking platform that automatically matches users, assigns them to events, and enables meaningful conversations.",
+    highlights: [
+      "Led development of AI-powered matcher using LangChain, MERN & TypeScript",
+      "Designed RAG pipelines → improved match accuracy by 30%",
+      "Migrated frontend to Next.js 15 → boosted SEO & organic traffic",
+      "Implemented Stripe subscriptions with multi-tier plans",
+      "Set up multi-environment deployments on GCP Cloud Run",
+      "Coordinated a small dev team on planning and delivery",
+    ],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "LangChain",
+      "Stripe",
+      "GCP",
+    ],
+    metrics: ["+30% match accuracy", "SEO growth", "Production-scale AI"],
+  },
+
+  {
+    slug: "dropify",
+    name: "Dropify",
+    role: "Full Stack Developer",
+    period: "Dec 2024 – Jul 2025",
+    location: "Morocco",
+    description:
+      "A SaaS e-commerce platform focused on AI-driven product ranking, landing page generation, and conversion optimization.",
+    highlights: [
+      "Built full SaaS platform using TypeScript, React, Node & Tailwind",
+      "Implemented GPT-4o Vision pipeline → improved product ranking by 20%",
+      "Developed AI landing page builder → increased higher-tier subscriptions",
+      "Refactored frontend lifecycle → achieved 99 PageSpeed score",
+      "Added WhatsApp broadcasting & geo-pricing → improved conversions by 15%",
+    ],
+    stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Tailwind",
+      "OpenAI",
+    ],
+    metrics: ["+20% recommendations", "+15% conversions", "99 PageSpeed"],
+  },
+
+  {
+    slug: "lofty-service",
+    name: "Lofty Service",
+    role: "Full Stack Developer",
+    period: "May 2024 – Dec 2024",
+    location: "Morocco",
+    description:
+      "A CRM system built for sellers, featuring finance, invoicing, reporting, and performance optimization.",
+    highlights: [
+      "Developed CRM using Spring Boot & React",
+      "Built finance, invoicing, and reporting modules",
+      "Refactored Dashboard API → faster reporting",
+      "Optimized DB queries → improved performance by 60%",
+      "Applied SOLID principles & design patterns for maintainability",
+    ],
+    stack: ["Spring Boot", "React", "PostgreSQL", "REST APIs"],
+    metrics: ["+60% performance", "Cleaner architecture"],
+  },
+];

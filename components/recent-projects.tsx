@@ -10,7 +10,7 @@ export default function RecentProjects() {
         </h2>
 
         <div className="space-y-4 mt-4">
-            <Link href="https://superintro.me" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+            <Link href='/superintro/overview' className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/superintro.png'} loading="lazy" alt="AI SaaS platform for matching and connecting people" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h3 className="text-2xl font-bold">Superintro</h3>
@@ -22,7 +22,7 @@ export default function RecentProjects() {
                     <MoveUpRight size={32} color="#334df5ff"/>
                 </span>
             </Link>
-            <Link href="https://dropify.shop" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+            <Link href='/dropify/overview' className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/dropify.png'} loading="lazy" alt="A SaaS platform for managing e-commerce stores" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h3 className="text-2xl font-bold">Dropify.shop</h3>
@@ -34,7 +34,7 @@ export default function RecentProjects() {
                     <MoveUpRight size={32} color="#334df5ff"/>
                 </span>
             </Link>
-            <Link href="https://loftyservice.com" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
+            <Link href="/lofty-service/overview" className="relative flex items-start p-2 gap-4 md:gap-10 md:p-10 hover:bg-[#b6b4bd0b] duration-100 rounded-xl cursor-pointer group">
                 <Image src={'/images/lofty.png'} loading="lazy" alt="A CRM platform helping sellers in GCC" width={120} height={200} className={'rounded-md'}/>
                 <div className="">
                     <h3 className="text-2xl font-bold">Lofty service</h3>
