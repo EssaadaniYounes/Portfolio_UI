@@ -76,7 +76,7 @@ export default function Experiences() {
                    [&>li]:text-sm
                    md:[&>li]:text-xl
                    tracking-wider">
-                            <li>Built and scaled a SaaS e-commerce platform (TypeScript, React, Tailwind, Node, Express)</li>
+                            <li>Built and scaled a SaaS e-commerce platform (TypeScript, React, Tailwind, Node, Express + Laravel)</li>
                             <li>Implemented GPT-4o vision pipeline for product ranking, improving recommendations by 20%</li>
                             <li>Developed AI-powered landing page builder, increasing higher-tier subscriptions</li>
                             <li>Refactored frontend and optimized lifecycle requests, achieving a 99 PageSpeed score</li>
@@ -105,7 +105,7 @@ export default function Experiences() {
                    [&>li]:text-sm
                    md:[&>li]:text-xl
                    tracking-wider">
-                            <li>Developed a full-featured CRM using Spring Boot and React</li>
+                            <li>Developed a full-featured CRM using Laravel and React</li>
                             <li>Built finance, invoicing, and reporting modules for internal operations</li>
                             <li>Refactored dashboard APIs, significantly improving reporting speed</li>
                             <li>Optimized database queries, boosting performance by ~60%</li>

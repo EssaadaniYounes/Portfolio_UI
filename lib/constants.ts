@@ -411,6 +411,8 @@ export const projects: ProjectV2[] = [
       "Node.js",
       "Express",
       "Tailwind",
+      "Laravel",
+      "MySQL",
       "OpenAI",
     ],
     metrics: ["+20% recommendations", "+15% conversions", "99 PageSpeed"],
@@ -425,13 +427,13 @@ export const projects: ProjectV2[] = [
     description:
       "A CRM system built for sellers, featuring finance, invoicing, reporting, and performance optimization.",
     highlights: [
-      "Developed CRM using Spring Boot & React",
+      "Developed CRM using Laravel & React",
       "Built finance, invoicing, and reporting modules",
       "Refactored Dashboard API → faster reporting",
       "Optimized DB queries → improved performance by 60%",
       "Applied SOLID principles & design patterns for maintainability",
     ],
-    stack: ["Spring Boot", "React", "PostgreSQL", "REST APIs"],
+    stack: ["Laravel", "React", "MySQL", 'Docker', 'Spatie multi-tenancy' , "REST APIs"],
     metrics: ["+60% performance", "Cleaner architecture"],
   },
 ];
