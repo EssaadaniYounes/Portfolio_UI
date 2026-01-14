@@ -5,7 +5,7 @@ export default function SeoJsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Younes Essaadani",
-    url: "https://essaadani.dev",
+    url: "https://www.essaadani.dev",
     jobTitle: "Full Stack & AI Engineer",
     sameAs: [
       "https://github.com/EssaadaniYounes",

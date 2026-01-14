@@ -8,7 +8,7 @@ const poppins = Poppins({
     display: "swap",
 })
 export const metadata: Metadata = {
-    metadataBase: new URL("https://essaadani.dev"),
+    metadataBase: new URL("https://www.essaadani.dev"),
     title: {
         default: "SaaS & Next.js Developer – Younes Essaadani",
         template: "%s | SaaS & Next.js Developer – Younes Essaadani",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
         "Web Developer Morocco",
         "Remote Full Stack Developer",
     ],
-    authors: [{ name: "Younes Essaadani", url: "https://essaadani.dev" }],
+    authors: [{ name: "Younes Essaadani", url: "https://www.essaadani.dev" }],
     creator: "Younes Essaadani",
     alternates: {
-        canonical: "https://essaadani.dev",
+        canonical: "https://www.essaadani.dev",
     },
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://essaadani.dev",
+        url: "https://www.essaadani.dev",
         title: "Younes Essaadani – Full Stack & AI Engineer",
         description:
             "I build SaaS products and AI systems that ship. Specialized in Next.js, Node.js, and scalable architectures.",

@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://essaadani.dev/sitemap.xml",
+    sitemap: "https://www.essaadani.dev/sitemap.xml",
   };
 }
