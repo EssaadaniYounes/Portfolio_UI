@@ -289,7 +289,7 @@ export const ARTICLES: Article[] = [
     title: "Memory Leaks in React & Next.js: What Nobody Tells You",
     description:
       "If you’ve built a React or Next.js app, you’ve probably noticed something strange: your page feels smooth at first, but after a while, interactions start to lag. CPU usage climbs. Sometimes, your browser tab just eats more memory than it should.",
-    url: "https://medium.com/@essaadani.yo/program-to-interface-not-implementation-29154de5c5b4",
+    url: "https://medium.com/@essaadani.yo/memory-leaks-in-react-next-js-what-nobody-tells-you-91c72b53d84d",
   },
   {
     thumbnail:
@@ -297,7 +297,7 @@ export const ARTICLES: Article[] = [
     title: "Program to interface NOT implementation",
     description:
       "Program to an Interface, Not an Implementation is a fundamental software design principle that enhances flexibility and maintainability. By coding to interfaces rather than specific implementations, developers decouple systems from their dependencies, making the code more modular, testable, and scalable. This approach aligns with key design principles like the Open/Closed Principle, allowing systems to be easily extended without altering existing code. In this article, we’ll explore how this principle works and why it’s essential for building robust software.",
-    url: "https://medium.com/@essaadani.yo/memory-leaks-in-react-next-js-what-nobody-tells-you-91c72b53d84d",
+    url: "https://medium.com/@essaadani.yo/program-to-interface-not-implementation-29154de5c5b4",
   },
   {
     thumbnail:
