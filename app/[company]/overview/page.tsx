@@ -2,10 +2,37 @@ import { notFound } from "next/navigation";
 import { projects } from "@/lib/constants";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import type { Metadata } from "next";
 
 type Props = {
   params: { company: string };
 };
+
+export function generateMetadata({ params }: Props): Metadata {
+  const project = projects.find((item) => item.slug === params.company);
+  if (!project) return { title: "Project not found", robots: { index: false, follow: false } };
+
+  const path = `/${project.slug}/overview`;
+  return {
+    title: project.name,
+    description: project.description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: "article",
+      url: path,
+      title: `${project.name} case study`,
+      description: project.description,
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${project.name} case study by Younes Essaadani` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      creator: "@EssaadaniYounes",
+      title: `${project.name} case study`,
+      description: project.description,
+      images: ["/og-image.png"],
+    },
+  };
+}
 
 export default function ProjectOverviewPage({ params }: Props) {
   const project = projects.find(p => p.slug === params.company);
@@ -15,19 +42,19 @@ export default function ProjectOverviewPage({ params }: Props) {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
       <Link href={'/'}>
-        <h2 className="mb-4  font-semibold text-white duration-100 hover:text-[#b6b4bd33]">
+        <h2 className="mb-4 font-semibold text-[#292929] duration-100 hover:text-[#059b82]">
           <ArrowLeft className="inline mr-2" size={20}/>
           Back
         </h2>
       </Link>
       <header className="mb-16">
-        <p className="text-sm uppercase tracking-widest text-[#b6b4bd33]">
+        <p className="text-sm uppercase tracking-widest text-[#059b82]">
           Case Study
         </p>
-        <h1 className="mt-4 text-4xl font-semibold text-white">
+        <h1 className="mt-4 text-4xl font-semibold text-[#292929]">
           {project.name}
         </h1>
-        <p className="mt-4 max-w-2xl text-gray-400">
+        <p className="mt-4 max-w-2xl text-[#6d6a66]">
           {project.description}
         </p>
       </header>
@@ -40,7 +67,7 @@ export default function ProjectOverviewPage({ params }: Props) {
       </div>
 
       <Block title="What I Worked On">
-        <ul className="space-y-3 text-gray-300">
+        <ul className="space-y-3 text-[#6d6a66]">
           {project.highlights.map((item, i) => (
             <li key={i}>• {item}</li>
           ))}
@@ -52,7 +79,7 @@ export default function ProjectOverviewPage({ params }: Props) {
           {project.stack.map(tech => (
             <span
               key={tech}
-              className="rounded-md border border-[#b6b4bd33] px-3 py-1 text-sm text-gray-300"
+              className="rounded-md border border-[#29292933] px-3 py-1 text-sm text-[#292929]"
             >
               {tech}
             </span>
@@ -62,7 +89,7 @@ export default function ProjectOverviewPage({ params }: Props) {
 
       {project.metrics && (
         <Block title="Impact">
-          <ul className="space-y-2 text-gray-300">
+          <ul className="space-y-2 text-[#6d6a66]">
             {project.metrics.map(m => (
               <li key={m}>→ {m}</li>
             ))}
@@ -71,13 +98,13 @@ export default function ProjectOverviewPage({ params }: Props) {
       )}
 
       {/* CTA */}
-      <div className="mt-24 border-t border-[#b6b4bd33] pt-10">
+      <div className="mt-24 border-t border-[#29292922] pt-10">
         <a
-          href="/#booking"
-          className="inline-flex items-center gap-2 text-sm text-white transition hover:opacity-70"
+          href="mailto:essaadani.yo@gmail.com"
+          className="inline-flex items-center gap-2 text-sm text-[#292929] transition hover:text-[#059b82]"
         >
           Want something similar?
-          <span className="text-gray-400">Let’s talk →</span>
+          <span className="text-[#6d6a66]">Let’s talk →</span>
         </a>
       </div>
     </section>
@@ -88,10 +115,10 @@ export default function ProjectOverviewPage({ params }: Props) {
 function Meta({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <p className="text-xs uppercase tracking-wide text-[#b6b4bd33]">
+      <p className="text-xs uppercase tracking-wide text-[#6d6a66]">
         {label}
       </p>
-      <p className="mt-2 text-sm text-white">{value}</p>
+      <p className="mt-2 text-sm text-[#292929]">{value}</p>
     </div>
   );
 }
@@ -105,8 +132,8 @@ function Block({
 }) {
   return (
     <div className="mb-16">
-      <h2 className="mb-4 text-xl font-medium text-white">{title}</h2>
-      <div className="max-w-3xl text-gray-400">{children}</div>
+      <h2 className="mb-4 text-xl font-medium text-[#292929]">{title}</h2>
+      <div className="max-w-3xl text-[#6d6a66]">{children}</div>
     </div>
   );
 }

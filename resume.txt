@@ -1,0 +1,114 @@
+
+
+% ================= HEADER =================
+{\LARGE \textbf{Younes Essaadani}} \\[4pt]
+\textbf{Full Stack Engineer (TypeScript / Node / Next.js / Java)} \\[6pt]
+
+\href{mailto:essaadani.yo@gmail.com}{essaadani.yo@gmail.com} \quad
++212 636 173 700 \quad
+\href{https://www.linkedin.com/in/younes-essaadani/}{LinkedIn} \quad
+\href{https://essaadani.dev}{essaadani.dev}
+
+\vspace{10pt}
+
+% ================= SUMMARY =================
+\section*{Professional Summary}
+Full Stack Engineer with 5+ years of experience designing, scaling, and operating production-grade SaaS and AI-driven systems. Strong expertise in TypeScript/Node.js ecosystems and Java Spring Boot, with hands-on experience in event-driven architectures, load balancing, caching strategies, database design, and production observability.
+
+Experienced in supporting systems serving up to 90K+ users, with responsibility across architecture, CI/CD, monitoring, and incident resolution. Focused on building reliable, secure, and maintainable systems that balance product velocity with operational stability.
+
+
+% ================= SKILLS =================
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Backend \& Architecture:} Node.js, Express, NestJS, Spring Boot, REST, GraphQL, WebSockets, RabbitMQ, Event-Driven Design  
+\item \textbf{Databases \& Caching}: PostgreSQL, MySQL, MongoDB, Redis (caching strategies, indexing, schema design)  
+\item \textbf{Infrastructure \& DevOps}: Docker, Nginx (load balancing, reverse proxy), GCP (Cloud Run), CI/CD (GitHub Actions, Jenkins), ELK Stack  
+\item \textbf{Frontend:} TypeScript, React, Next.js (14/15), Angular, Tailwind CSS  
+\item \textbf{AI \& LLM Systems:} LangChain, LangGraph, OpenAI APIs, RAG pipelines
+\end{itemize}
+
+
+% ================= EXPERIENCE =================
+\section*{Professional Experience}
+
+\textbf{DXC} — Front-End Engineer (Enterprise Insurance Platform) \\
+\textit{Jul 2025 – Present | Freelance, UK}
+\begin{itemize}[leftmargin=*]
+  \item Contributed to a large-scale insurance claims management platform used in enterprise environments.
+  \item Structured modular frontend architecture to improve maintainability and scalability.
+  \item Optimized change detection and lazy loading strategies to reduce rendering overhead.
+  \item Integrated CI/CD pipelines with Jenkins and artifact management via Nexus to ensure deployment consistency and build stability.
+  \item Collaborated with backend teams to ensure contract integrity and predictable API consumption.
+\end{itemize}
+
+
+\textbf{SuperIntro} — Full Stack Engineer (Later Part-Time Technical Lead) \\
+\textit{Aug 2023 – Dec 2025}
+\begin{itemize}[leftmargin=*]
+  \item Contributed to the architecture and development of an AI-powered relationship matching platform serving 400+ active users.
+  \item Designed and implemented RAG pipelines using LangChain and OpenAI APIs, improving match relevance by 30%.
+  \item Introduced Redis caching to improve API performance and reduce repeated computation costs.
+  \item Designed core database schemas and ensured consistency across evolving feature requirements.
+  \item Implemented real-time communication via WebSockets and secure OAuth-based authentication.
+  \item Established centralized logging and observability using ELK stack to improve production debugging and system visibility.
+  \item Managed containerized deployments on GCP Cloud Run with CI/CD automation and secure secret management.
+  \item Resolved a critical production incident involving database connectivity failure, restoring service availability and implementing monitoring checks to prevent recurrence.
+\end{itemize}
+
+
+\textbf{Dropify.shop} — Full Stack Engineer \\
+\textit{Dec 2024 – Jul 2025 | Full-time}
+\begin{itemize}[leftmargin=*]
+  \item Contributed to the architecture and scaling of a multi-tenant SaaS e-commerce platform serving 90K+ users.
+  \item Designed and implemented an event-driven AI landing page generation pipeline using RabbitMQ, decoupling heavy processing from user-facing APIs and improving fault isolation.
+  \item Implemented Redis-based caching strategies to reduce database load and improve response times under high traffic.
+  \item Configured Nginx-based load balancing and reverse proxy setup to support horizontal scaling of backend services.
+  \item Designed relational database schemas and optimized queries with indexing strategies, improving performance and consistency.
+  \item Integrated GPT-4o Vision pipelines for product ranking, improving recommendation accuracy by 20%.
+  \item Led frontend performance optimization efforts, achieving a 99 PageSpeed score and improving overall user engagement.
+\end{itemize}
+
+
+\textbf{Lofty Service} — Full Stack Engineer (On-site) \\
+\textit{May 2024 – Dec 2024}
+\begin{itemize}[leftmargin=*]
+  \item Contributed to the architecture and development of an internal CRM platform using Laravel and Vue.js, supporting finance, sourcing, and operational workflows.
+  \item Designed and implemented secure authentication layers using Laravel Sanctum and Passport, including Two-Factor Authentication to strengthen account security.
+  \item Introduced queue-based processing for background tasks to improve system responsiveness and prevent blocking operations.
+  \item Led a structured refactoring initiative of legacy modules, applying SOLID principles and design patterns to improve maintainability and reduce technical debt.
+  \item Optimized database performance through indexing strategies and query refactoring, improving reporting and finance module response times by ~60%.
+  \item Designed and implemented sourcing, finance, and drop-shipping modules in collaboration with cross-functional stakeholders.
+  \item Established logging and monitoring practices to improve visibility into system behavior and support faster debugging.
+  \item Conducted code reviews and enforced Git-based workflow standards to improve code quality and team consistency.
+\end{itemize}
+
+\textbf{Independent Software Engineer (Freelance)} \\
+\textit{2021 – 2023}
+\begin{itemize}[leftmargin=*]
+  \item Designed and developed production-grade APIs and full-stack applications for clients in education, real estate, legal, and e-commerce domains.
+  \item Built a School Management System using Laravel, MySQL, and Redis for caching, with JWT-based authentication and role-permission management using Spatie library; integrated unit and API tests and documented endpoints with laravel-request-docs.
+  \item Developed an Apartment Management System supporting dynamic property data, automated monthly payment reminders using scheduled jobs, and secured admin workflows.
+  \item Created a Lawyer Management System enabling client tracking, case management, and invoice generation; implemented security and role-based access control for sensitive client data.
+  \item Built a Product Management Application (Next.js 11, Spring Boot, Tailwind CSS, PostgreSQL, Redis) with secure API access, invoice generation via external API, and comprehensive front-end and back-end unit/integration tests.
+  \item Managed version control and CI/CD pipelines using Git and GitHub Actions, ensuring reliable deployments and production readiness.
+  \item Ensured observability, caching strategies, security best practices, and system performance across all applications.
+\end{itemize}
+
+
+
+% ================= EDUCATION =================
+\section*{Education}
+
+\textbf{Bachelor-equivalent in Computer Science} \\
+Private University Marrakech \hfill 2022 – 2023
+
+\textbf{Diploma in Computer Science} \\
+ISTA NTIC, Beni Mellal \hfill 2020 – 2022
+
+% ================= LANGUAGES =================
+\section*{Languages}
+
+Arabic (Native) \quad English (Fluent) \quad French (Intermediate)
+
+\end{document}

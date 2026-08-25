@@ -6,6 +6,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Skills & Tech Stack | Full Stack & AI Engineer – Younes Essaadani",
   description:
     "Explore the technical skills and tools used by Younes Essaadani, a Full Stack & AI Engineer specializing in Next.js, React, Node.js, SaaS architecture, and AI-powered systems for startups and agencies.",

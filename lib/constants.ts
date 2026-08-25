@@ -36,142 +36,142 @@ import {
   TbBrandTypescript,
 } from "react-icons/tb";
 
-export const PROJECTS: Project[] = [
-  {
-    name: "Lofty Service CRM",
-    description:
-      "A platform to help lofty team manage their client's orders, sourcing, invoicicng, payments, etc.",
-    technologies: [
-      "Laravel",
-      "Redis",
-      "VueJs2",
-      "MySQL",
-      "S3",
-      "Laravel Vapor",
-    ],
-    imageUrl: "/images/lofty.png",
-    url: "https://app.loftyservice.com/",
-  },
-  {
-    name: "PersonaNet",
-    description:
-      "A social media platfrom that allows users to engage 24/7 with other people without having to connect their persona will do the work for them.",
-    technologies: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-      "Firebase",
-    ],
-    imageUrl: "/images/PersonaNET.png",
-    url: "https://personanet.app/",
-  },
-  {
-    name: "School Portal",
-    description:
-      "A school management system that allows users to manage their school, students, teachers, payments, etc.",
-    technologies: [
-      "Laravel",
-      "ReactJs",
-      "Redis",
-      "MySql",
-      "Passport",
-      "Firebase storage",
-    ],
-    imageUrl: "/images/SchoolManagment.png",
-  },
+// export const PROJECTS: Project[] = [
+//   {
+//     name: "Lofty Service CRM",
+//     description:
+//       "A platform to help lofty team manage their client's orders, sourcing, invoicicng, payments, etc.",
+//     technologies: [
+//       "Laravel",
+//       "Redis",
+//       "VueJs2",
+//       "MySQL",
+//       "S3",
+//       "Laravel Vapor",
+//     ],
+//     imageUrl: "/images/lofty.png",
+//     url: "https://app.loftyservice.com/",
+//   },
+//   {
+//     name: "PersonaNet",
+//     description:
+//       "A social media platfrom that allows users to engage 24/7 with other people without having to connect their persona will do the work for them.",
+//     technologies: [
+//       "React",
+//       "Node.js",
+//       "Express",
+//       "MongoDB",
+//       "Tailwind CSS",
+//       "Firebase",
+//     ],
+//     imageUrl: "/images/PersonaNET.png",
+//     url: "https://personanet.app/",
+//   },
+//   {
+//     name: "School Portal",
+//     description:
+//       "A school management system that allows users to manage their school, students, teachers, payments, etc.",
+//     technologies: [
+//       "Laravel",
+//       "ReactJs",
+//       "Redis",
+//       "MySql",
+//       "Passport",
+//       "Firebase storage",
+//     ],
+//     imageUrl: "/images/SchoolManagment.png",
+//   },
 
-  {
-    name: "Portfolio Maker",
-    description:
-      "A portfolio maker that allows users to create their own portfolio with their projects and skills by filling forms and choosing the template.",
-    technologies: ["NextJs", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    imageUrl: "/images/ProtfolioMaker.png",
-  },
-];
+//   {
+//     name: "Portfolio Maker",
+//     description:
+//       "A portfolio maker that allows users to create their own portfolio with their projects and skills by filling forms and choosing the template.",
+//     technologies: ["NextJs", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+//     imageUrl: "/images/ProtfolioMaker.png",
+//   },
+// ];
 
-export const EXPERIENCES: Experience[] = [
-  {
-    company: "Lofty Service",
-    jobTitle: "Full Stack Developer",
-    location: "Marrakech, Morocco",
-    startDate: "May 2024",
-    endDate: "Present",
-    description: [
-      "Developed a comprehensive e-commerce Customer Relationship Management (CRM) system",
-      "Implemented MySQL for efficient data storage and management",
-      "Developed responsive front-end using Vue.js and Bootstrap for improved user experience",
-      "Implemented Two Factor Authentication with Google Authenticator",
-      "Optimised slow-performing database queries and Implemented database indexing, resulting in a 60% improvement in overall system performance",
-      "Led initiative to refactor existing codebase, implementing SOLID principles, And design patterns",
-      "Collaborated with finance, sourcing department team to develop and integrate a comprehensive finance, sourcing modules",
-      "Conducted regular code reviews using Bitbucket pull request feature",
-      "Lead a drop shipping module making sure all features are well developed and following best practices",
-      "Implemented logging and monitoring solutions to track system performance",
-      "Collaborated with UX/UI designers, QA team to improve user experience and app stability",
-      "Participated in sprint planning and retrospectives to continuously improve development processes",
-      "Shared knowledge with team members through internal training sessions",
-    ],
-  },
-  {
-    company: "AfterFlea OS Conversational AI",
-    jobTitle: "Full Stack Developer",
-    location: "San Francisco, Remote",
-    startDate: "August 2023",
-    endDate: "May 2024",
-    description: [
-      "Spearheaded the development of a persona-based social media application using the MERN stack, facilitating personalized connections and matchings.",
-      " Employed containerization with Docker, streamlining deployment processes and ensuring consistency acrossenvironments.",
-      " Implemented a Test-Driven Development (TDD) approach, writing comprehensive unit and integration tests to ensure the reliability and stability of the application.",
-      " Managed project versioning and collaboration using Git and GitHub, maintaining a well-organized and documented codebase for efficient team collaboration and code review.",
-      " Mentored and trained 4 interns, providing guidance and support to enhance their technical skills and knowledge in web development.",
-      " Proposed the project architecture making sure the app can scale and maintain easily.",
-      "Collabored with the desginers team to ensure the design and user experience of the app was well-structured and user-friendly.",
-    ],
-  },
-  {
-    company: "GM-Soft",
-    jobTitle: "Backend Developer",
-    location: "Beni Mellal, Morocco (Hybrid)",
-    startDate: "Januray 2023",
-    endDate: "August 2023",
-    description: [
-      `Developed a comprehensive school management system using Java and Spring Boot, encompassing student management, attendance
-tracking, and grade management functionalities.`,
-      `
-Collaborated with frontend developers to integrate backend
-services with the Angular frontend, ensuring seamless
-communication and user interaction.`,
-      `
-Implemented caching mechanisms using Redis to optimize data
-retrieval and improve application performance, enhancing
-scalability and responsiveness.`,
-      `
-Engineered scheduling algorithms for efficient session
-management, ensuring optimal resource allocation and
-maximizing system throughput.`,
-      `
-Integrated JSON Web Token (JWT) authentication with Spring
-Security, fortifying application security and protecting sensitive
-data.`,
-      `Leveraged Firebase for file storage, enabling secure and scalable
-storage solutions for documents and media assets.`,
-    ],
-  },
-  {
-    company: "Molay soultan solayman university",
-    jobTitle: "Frontend Developer Intern",
-    location: "Beni Mellal, Morocco",
-    startDate: "March 2022",
-    endDate: "May 2022",
-    description: [
-      "completed an internship where I served as a front-end developer, contributing to the redesign of the university's UI.",
-      "Utilized Next.js and TypeScript to create a modern, responsive, and userfriendly interface. Implemented Tailwind CSS for efficient styling, ensuring a seamless and visually appealing experience for users",
-      "Integrated with existing APIs to enable students to access their information, exam schedules, and other relevant data. Demonstrated proficiency in front-end technologies and a keen eye for UI/UX design principles.",
-    ],
-  },
-];
+// export const EXPERIENCES: Experience[] = [
+//   {
+//     company: "Lofty Service",
+//     jobTitle: "Full Stack Developer",
+//     location: "Marrakech, Morocco",
+//     startDate: "May 2024",
+//     endDate: "Present",
+//     description: [
+//       "Developed a comprehensive e-commerce Customer Relationship Management (CRM) system",
+//       "Implemented MySQL for efficient data storage and management",
+//       "Developed responsive front-end using Vue.js and Bootstrap for improved user experience",
+//       "Implemented Two Factor Authentication with Google Authenticator",
+//       "Optimised slow-performing database queries and Implemented database indexing, resulting in a 60% improvement in overall system performance",
+//       "Led initiative to refactor existing codebase, implementing SOLID principles, And design patterns",
+//       "Collaborated with finance, sourcing department team to develop and integrate a comprehensive finance, sourcing modules",
+//       "Conducted regular code reviews using Bitbucket pull request feature",
+//       "Lead a drop shipping module making sure all features are well developed and following best practices",
+//       "Implemented logging and monitoring solutions to track system performance",
+//       "Collaborated with UX/UI designers, QA team to improve user experience and app stability",
+//       "Participated in sprint planning and retrospectives to continuously improve development processes",
+//       "Shared knowledge with team members through internal training sessions",
+//     ],
+//   },
+//   {
+//     company: "AfterFlea OS Conversational AI",
+//     jobTitle: "Full Stack Developer",
+//     location: "San Francisco, Remote",
+//     startDate: "August 2023",
+//     endDate: "May 2024",
+//     description: [
+//       "Spearheaded the development of a persona-based social media application using the MERN stack, facilitating personalized connections and matchings.",
+//       " Employed containerization with Docker, streamlining deployment processes and ensuring consistency acrossenvironments.",
+//       " Implemented a Test-Driven Development (TDD) approach, writing comprehensive unit and integration tests to ensure the reliability and stability of the application.",
+//       " Managed project versioning and collaboration using Git and GitHub, maintaining a well-organized and documented codebase for efficient team collaboration and code review.",
+//       " Mentored and trained 4 interns, providing guidance and support to enhance their technical skills and knowledge in web development.",
+//       " Proposed the project architecture making sure the app can scale and maintain easily.",
+//       "Collabored with the desginers team to ensure the design and user experience of the app was well-structured and user-friendly.",
+//     ],
+//   },
+//   {
+//     company: "GM-Soft",
+//     jobTitle: "Backend Developer",
+//     location: "Beni Mellal, Morocco (Hybrid)",
+//     startDate: "Januray 2023",
+//     endDate: "August 2023",
+//     description: [
+//       `Developed a comprehensive school management system using Java and Spring Boot, encompassing student management, attendance
+// tracking, and grade management functionalities.`,
+//       `
+// Collaborated with frontend developers to integrate backend
+// services with the Angular frontend, ensuring seamless
+// communication and user interaction.`,
+//       `
+// Implemented caching mechanisms using Redis to optimize data
+// retrieval and improve application performance, enhancing
+// scalability and responsiveness.`,
+//       `
+// Engineered scheduling algorithms for efficient session
+// management, ensuring optimal resource allocation and
+// maximizing system throughput.`,
+//       `
+// Integrated JSON Web Token (JWT) authentication with Spring
+// Security, fortifying application security and protecting sensitive
+// data.`,
+//       `Leveraged Firebase for file storage, enabling secure and scalable
+// storage solutions for documents and media assets.`,
+//     ],
+//   },
+//   {
+//     company: "Molay soultan solayman university",
+//     jobTitle: "Frontend Developer Intern",
+//     location: "Beni Mellal, Morocco",
+//     startDate: "March 2022",
+//     endDate: "May 2022",
+//     description: [
+//       "completed an internship where I served as a front-end developer, contributing to the redesign of the university's UI.",
+//       "Utilized Next.js and TypeScript to create a modern, responsive, and userfriendly interface. Implemented Tailwind CSS for efficient styling, ensuring a seamless and visually appealing experience for users",
+//       "Integrated with existing APIs to enable students to access their information, exam schedules, and other relevant data. Demonstrated proficiency in front-end technologies and a keen eye for UI/UX design principles.",
+//     ],
+//   },
+// ];
 
 export const SKILLS: Skill[] = [
   {
@@ -371,10 +371,46 @@ export type ProjectV2 = {
 
 export const projects: ProjectV2[] = [
   {
+    slug: "unrwa",
+    name: "UNRWA Digital Archive",
+    role: "Senior Software Engineer Consultant",
+    period: "Apr 2026 – Present",
+    location: "Remote · Luxembourg",
+    description:
+      "An Azure-based digital archive designed to ingest, classify, store, and retrieve 16 million documents across five countries.",
+    highlights: [
+      "Co-designed the event-driven archive architecture and country-by-country rollout",
+      "Built ingestion workflows with Node.js, Azure Functions, queues, blob storage, and Azure SQL",
+      "Integrated Azure Document Intelligence and AI Search for classification and retrieval",
+      "Built a Next.js human-review interface for validating extracted data",
+      "Delivered an internal documentation portal for stakeholders and engineers",
+    ],
+    stack: ["Next.js", "Node.js", "Azure Functions", "Azure SQL", "Blob Storage", "Queue Storage", "AI Search", "Document Intelligence"],
+    metrics: ["16M-document architecture", "4M documents ingested", "86%+ extraction accuracy", "Five-country rollout"],
+  },
+  {
+    slug: "dxc-technology",
+    name: "DXC Enterprise Insurance Platform",
+    role: "Front-End Engineer",
+    period: "Jul 2025 – Mar 2026",
+    location: "Remote · United Kingdom",
+    description:
+      "A modular enterprise insurance platform supporting carriers, brokers, and technical operations teams.",
+    highlights: [
+      "Developed modular Angular components for complex insurance workflows",
+      "Migrated application modules from Angular 10 to Angular 18",
+      "Implemented route-level lazy loading to improve startup performance",
+      "Introduced Hot Module Replacement for near-immediate UI feedback",
+      "Integrated RxJS workflows with APIs delivered through a microservices architecture",
+    ],
+    stack: ["Angular 18", "TypeScript", "RxJS", "Microservices", "REST APIs", "HMR", "Lazy Loading"],
+    metrics: ["Angular 10 → 18 migration", "8+ minute workflow replays eliminated", "Faster frontend iteration"],
+  },
+  {
     slug: "superintro",
     name: "SuperIntro",
     role: "Full Stack Engineer",
-    period: "Nov 2024 – Present",
+    period: "Jan 2025 – Jun 2025",
     location: "Remote · US-based startup",
     description:
       "An AI-powered relationship and networking platform that automatically matches users, assigns them to events, and enables meaningful conversations.",
@@ -401,8 +437,8 @@ export const projects: ProjectV2[] = [
   {
     slug: "dropify",
     name: "Dropify",
-    role: "Full Stack Developer",
-    period: "Dec 2024 – Jul 2025",
+    role: "Backend Engineer",
+    period: "Sep 2023 – Dec 2024",
     location: "Morocco",
     description:
       "A SaaS e-commerce platform focused on AI-driven product ranking, landing page generation, and conversion optimization.",
@@ -429,8 +465,8 @@ export const projects: ProjectV2[] = [
   {
     slug: "lofty-service",
     name: "Lofty Service",
-    role: "Full Stack Developer",
-    period: "May 2024 – Dec 2024",
+    role: "Junior Full-Stack Engineer",
+    period: "Jul 2022 – Aug 2023",
     location: "Morocco",
     description:
       "A CRM system built for sellers, featuring finance, invoicing, reporting, and performance optimization.",
@@ -441,7 +477,7 @@ export const projects: ProjectV2[] = [
       "Optimized DB queries → improved performance by 60%",
       "Applied SOLID principles & design patterns for maintainability",
     ],
-    stack: ["Laravel", "React", "MySQL", 'Docker', 'Spatie multi-tenancy' , "REST APIs"],
+    stack: ["Laravel", "React", "MySQL", 'Docker', 'Spatie multi-tenancy', "REST APIs"],
     metrics: ["+60% performance", "Cleaner architecture"],
   },
 ];

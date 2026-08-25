@@ -1,17 +1,10 @@
 import type { Metadata } from 'next'
 import "./globals.css";
-import { Poppins } from "next/font/google";
-import { cn } from "@/lib/utils";
-const poppins = Poppins({
-    weight: ["600", "500", "700", "800"],
-    subsets: ["latin"],
-    display: "swap",
-})
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.essaadani.dev"),
     title: {
-        default: "SaaS & Next.js Developer – Younes Essaadani",
-        template: "%s | SaaS & Next.js Developer – Younes Essaadani",
+        default: "Younes Essaadani | Senior Full-Stack Engineer",
+        template: "%s | Younes Essaadani",
     },
     description:
         "Full Stack & AI Engineer building SaaS products, landing pages, and AI systems with Next.js, Node.js, and modern tools. Available for freelance and remote work.",
@@ -29,9 +22,6 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: "Younes Essaadani", url: "https://www.essaadani.dev" }],
     creator: "Younes Essaadani",
-    alternates: {
-        canonical: "https://www.essaadani.dev",
-    },
     openGraph: {
         type: "website",
         locale: "en_US",
@@ -55,7 +45,7 @@ export const metadata: Metadata = {
         description:
             "Full Stack & AI Engineer building SaaS and AI-powered products.",
         images: ["/og-image.png"],
-        creator: "@your_twitter", // optional
+        creator: "@EssaadaniYounes",
     },
     robots: {
         index: true,
@@ -76,7 +66,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={cn("bg-[#151312] text-neutral-100 antialiased", poppins.className)}>
+            <body className="antialiased">
                 {children}
             </body>
         </html>

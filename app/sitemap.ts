@@ -1,6 +1,13 @@
 import { MetadataRoute } from "next";
+import { projects } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
+    url: `https://www.essaadani.dev/${project.slug}/overview`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   return [
     {
       url: "https://www.essaadani.dev",
@@ -8,26 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-    {
-      url: "https://www.essaadani.dev/skills",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: "https://www.essaadani.dev/projects",
-      lastModified: new Date(),
-      priority: 0.8,
-    },
-    {
-      url: "https://www.essaadani.dev/experience",
-      lastModified: new Date(),
-      priority: 0.7,
-    },
-    {
-      url: "https://www.essaadani.dev/contact",
-      lastModified: new Date(),
-      priority: 0.6,
-    },
+    ...projectPages,
   ];
 }
