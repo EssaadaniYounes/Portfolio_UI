@@ -3,6 +3,7 @@ import { projects } from "@/lib/constants";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
+import { expertisePages } from "@/lib/expertise";
 
 type Props = {
   params: { company: string };
@@ -38,9 +39,20 @@ export default function ProjectOverviewPage({ params }: Props) {
   const project = projects.find(p => p.slug === params.company);
 
   if (!project) notFound();
+  const relatedExpertise = expertisePages.filter((item) => item.relatedProjects.includes(project.slug));
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${project.name} engineering case study`,
+    description: project.description,
+    author: { "@type": "Person", "@id": "https://www.essaadani.dev/#person", name: "Younes Essaadani" },
+    mainEntityOfPage: `https://www.essaadani.dev/${project.slug}/overview`,
+    keywords: project.stack.join(", "),
+  };
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Link href={'/'}>
         <h2 className="mb-4 font-semibold text-[#292929] duration-100 hover:text-[#059b82]">
           <ArrowLeft className="inline mr-2" size={20}/>
@@ -66,6 +78,11 @@ export default function ProjectOverviewPage({ params }: Props) {
         <Meta label="Stack" value={project.stack.slice(0, 3).join(", ")} />
       </div>
 
+      <div className="mb-20 grid gap-10 border-y border-[#29292922] py-12 md:grid-cols-2">
+        <Block title="The Challenge"><p>{project.challenge}</p></Block>
+        <Block title="Engineering Approach"><p>{project.approach}</p></Block>
+      </div>
+
       <Block title="What I Worked On">
         <ul className="space-y-3 text-[#6d6a66]">
           {project.highlights.map((item, i) => (
@@ -89,13 +106,19 @@ export default function ProjectOverviewPage({ params }: Props) {
 
       {project.metrics && (
         <Block title="Impact">
-          <ul className="space-y-2 text-[#6d6a66]">
+          <ul className="grid gap-3 sm:grid-cols-2 text-[#292929]">
             {project.metrics.map(m => (
-              <li key={m}>→ {m}</li>
+              <li className="border border-[#29292922] p-4" key={m}>→ {m}</li>
             ))}
           </ul>
         </Block>
       )}
+
+      <Block title="Related Expertise">
+        <div className="flex flex-wrap gap-3">
+          {relatedExpertise.map((item) => <Link className="border-b border-[#292929] pb-1 text-[#292929] hover:text-[#059b82]" href={`/expertise/${item.slug}`} key={item.slug}>{item.shortTitle} ↗</Link>)}
+        </div>
+      </Block>
 
       {/* CTA */}
       <div className="mt-24 border-t border-[#29292922] pt-10">

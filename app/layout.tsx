@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: "Younes Essaadani", url: "https://www.essaadani.dev" }],
     creator: "Younes Essaadani",
+    verification: process.env.GOOGLE_SITE_VERIFICATION
+        ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+        : undefined,
     openGraph: {
         type: "website",
         locale: "en_US",

@@ -374,6 +374,8 @@ export type ProjectV2 = {
   period: string;
   location: string;
   description: string;
+  challenge: string;
+  approach: string;
   highlights: string[];
   stack: string[];
   metrics?: string[];
@@ -388,6 +390,8 @@ export const projects: ProjectV2[] = [
     location: "Remote · Luxembourg",
     description:
       "An Azure-based digital archive designed to ingest, classify, store, and retrieve 16 million documents across five countries.",
+    challenge: "Create a controlled, country-by-country path for digitizing a very large archive while keeping document processing scalable, searchable, and reviewable by people.",
+    approach: "We separated ingestion into event-driven stages using queues, serverless functions, blob storage, and structured metadata. Automated extraction feeds a Next.js review workflow so uncertain records can be corrected without blocking the wider pipeline.",
     highlights: [
       "Co-designed the event-driven archive architecture and country-by-country rollout",
       "Built ingestion workflows with Node.js, Azure Functions, queues, blob storage, and Azure SQL",
@@ -406,6 +410,8 @@ export const projects: ProjectV2[] = [
     location: "Remote · United Kingdom",
     description:
       "A modular enterprise insurance platform supporting carriers, brokers, and technical operations teams.",
+    challenge: "Modernize a large Angular application without interrupting complex insurance workflows or slowing down a distributed engineering team.",
+    approach: "The work combined incremental Angular upgrades, modular component refactoring, route-level lazy loading, and RxJS integrations. Hot Module Replacement shortened the feedback loop for workflows that previously required lengthy manual replay.",
     highlights: [
       "Developed modular Angular components for complex insurance workflows",
       "Migrated application modules from Angular 10 to Angular 18",
@@ -419,18 +425,19 @@ export const projects: ProjectV2[] = [
   {
     slug: "superintro",
     name: "SuperIntro",
-    role: "Full Stack Engineer",
+    role: "Full-Stack Engineer / Technical Lead",
     period: "Jan 2025 – Jun 2025",
     location: "Remote · US-based startup",
     description:
       "An AI-powered relationship and networking platform that automatically matches users, assigns them to events, and enables meaningful conversations.",
+    challenge: "Turn varied user information into relevant relationship recommendations while coordinating delivery across frontend, backend, and design disciplines.",
+    approach: "The platform combined a RAG matching pipeline with LangChain, LangGraph, and Azure OpenAI, backed by a TypeScript product stack, real-time communication, scheduled generation, and multi-environment cloud deployment.",
     highlights: [
-      "Led development of AI-powered matcher using LangChain, MERN & TypeScript",
-      "Designed RAG pipelines → improved match accuracy by 30%",
-      "Migrated frontend to Next.js 15 → boosted SEO & organic traffic",
-      "Implemented Stripe subscriptions with multi-tier plans",
-      "Set up multi-environment deployments on GCP Cloud Run",
-      "Coordinated a small dev team on planning and delivery",
+      "Led sprint planning, architecture, code review, and technical delivery within a 14-member team",
+      "Designed RAG matching pipelines with LangChain, LangGraph, and Azure OpenAI",
+      "Built real-time communication and in-app notifications with WebSockets",
+      "Containerized APIs and clients for multi-environment GCP Cloud Run deployment",
+      "Automated weekly match generation and implemented Stripe subscriptions",
     ],
     stack: [
       "Next.js",
@@ -438,10 +445,13 @@ export const projects: ProjectV2[] = [
       "Node.js",
       "MongoDB",
       "LangChain",
+      "LangGraph",
+      "Azure OpenAI",
+      "WebSockets",
       "Stripe",
       "GCP",
     ],
-    metrics: ["+30% match accuracy", "SEO growth", "Production-scale AI"],
+    metrics: ["~30% improvement in match relevance", "400+ users", "Five recommendations per user", "14-member delivery team"],
   },
 
   {
@@ -451,25 +461,26 @@ export const projects: ProjectV2[] = [
     period: "Sep 2023 – Dec 2024",
     location: "Morocco",
     description:
-      "A SaaS e-commerce platform focused on AI-driven product ranking, landing page generation, and conversion optimization.",
+      "A SaaS e-commerce and storefront platform serving more than 70,000 sellers.",
+    challenge: "Keep seller storefronts responsive while scaling a high-traffic commerce platform and moving long-running AI generation work away from interactive requests.",
+    approach: "The backend combined MySQL query refactoring, database optimization, Redis caching, and an event-driven RabbitMQ pipeline. Docker standardized service environments while asynchronous workers isolated AI landing-page generation from customer sessions.",
     highlights: [
-      "Built full SaaS platform using TypeScript, React, Node & Tailwind",
-      "Implemented GPT-4o Vision pipeline → improved product ranking by 20%",
-      "Developed AI landing page builder → increased higher-tier subscriptions",
-      "Refactored frontend lifecycle → achieved 99 PageSpeed score",
-      "Added WhatsApp broadcasting & geo-pricing → improved conversions by 15%",
+      "Built and scaled backend capabilities with TypeScript, Node.js, and Express",
+      "Refactored MySQL queries and introduced Redis caching for critical storefront paths",
+      "Designed an event-driven AI landing-page pipeline with RabbitMQ",
+      "Implemented fingerprint-based fraud-risk detection from behavioral and transaction metadata",
+      "Containerized backend services with Docker",
     ],
     stack: [
-      "React",
       "TypeScript",
       "Node.js",
       "Express",
-      "Tailwind",
-      "Laravel",
       "MySQL",
-      "OpenAI",
+      "Redis",
+      "RabbitMQ",
+      "Docker",
     ],
-    metrics: ["+20% recommendations", "+15% conversions", "99 PageSpeed"],
+    metrics: ["70K+ sellers", "40+ seconds to under 4 seconds", "97+ mobile PageSpeed", "99 desktop PageSpeed"],
   },
 
   {
@@ -479,15 +490,17 @@ export const projects: ProjectV2[] = [
     period: "Jul 2022 – Aug 2023",
     location: "Morocco",
     description:
-      "A CRM system built for sellers, featuring finance, invoicing, reporting, and performance optimization.",
+      "An internal CRM supporting 90–120 employees and approximately 2,000 seller clients.",
+    challenge: "Modernize a legacy operational CRM, reduce slow database-backed workflows, and make ongoing feature delivery safer for internal teams.",
+    approach: "The application evolved toward a React, Express, Node.js, TypeScript, and MySQL architecture. Query and schema optimization improved responsiveness while SOLID principles, design patterns, TDD, and CI/CD reduced delivery risk.",
     highlights: [
-      "Developed CRM using Laravel & React",
-      "Built finance, invoicing, and reporting modules",
-      "Refactored Dashboard API → faster reporting",
-      "Optimized DB queries → improved performance by 60%",
-      "Applied SOLID principles & design patterns for maintainability",
+      "Built finance, invoicing, reporting, authentication, authorization, and two-factor authentication modules",
+      "Optimized MySQL queries and schemas across core CRM workflows",
+      "Migrated legacy modules toward SOLID principles and maintainable design patterns",
+      "Introduced test-driven development and automated regression tests",
+      "Implemented standardized CI/CD deployment pipelines",
     ],
-    stack: ["Laravel", "React", "MySQL", 'Docker', 'Spatie multi-tenancy', "REST APIs"],
-    metrics: ["+60% performance", "Cleaner architecture"],
+    stack: ["React", "TypeScript", "Node.js", "Express", "MySQL", "TDD", "CI/CD"],
+    metrics: ["90–120 employees supported", "~2,000 seller clients", "10–15 seconds removed from slow APIs", "Under 3-minute deployments"],
   },
 ];

@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Search visibility setup
+
+The portfolio generates `/sitemap.xml` and `/robots.txt` automatically.
+
+After deploying the production domain:
+
+1. Add `https://www.essaadani.dev` as a domain property in Google Search Console.
+2. Choose the HTML tag verification method and copy only its `content` value.
+3. Set that value as `GOOGLE_SITE_VERIFICATION` in the deployment environment.
+4. Redeploy, verify the property, and submit `https://www.essaadani.dev/sitemap.xml`.
+5. Request indexing for the homepage, expertise pages, and project case studies.
