@@ -7,8 +7,8 @@ import Articles from "@/components/articles";
 import { expertisePages } from "@/lib/expertise";
 
 export const metadata: Metadata = {
-  title: { absolute: "Younes Essaadani | Senior Full-Stack Engineer" },
-  description: "Senior full-stack engineer specializing in backend architecture, AI systems, and high-performance web products.",
+  title: { absolute: "Younes Essaadani | Senior Backend & AI Systems Engineer" },
+  description: "Senior Backend and AI Systems Engineer specializing in production RAG pipelines, distributed systems, LangGraph, and large-scale data architecture.",
   alternates: { canonical: "/" },
 };
 
@@ -42,7 +42,7 @@ export default function Home() {
     </header>
 
     <section id="top" className="hero shell">
-      <div className="hero-copy"><p className="eyebrow">Senior full-stack engineer · Morocco</p><h1>I engineer digital products that <em>perform.</em></h1><p className="hero-intro">Backend architecture, AI systems, and thoughtful interfaces—built to solve hard problems at meaningful scale.</p><div className="hero-actions"><a href="mailto:essaadani.yo@gmail.com" className="button button-dark">Start a conversation <ArrowUpRight size={16} /></a><a href="/assets/pdfs/Younes_Essaadani_Resume.pdf" download className="text-link">Résumé <Download size={15} /></a></div></div>
+      <div className="hero-copy"><p className="eyebrow">Backend architecture · Production AI · Morocco</p><h1>Senior Backend &amp; <em>AI Systems Engineer.</em></h1><p className="hero-intro">I design production RAG pipelines, distributed systems, and large-scale data architecture—then build the interfaces that make them useful.</p><div className="hero-actions"><a href="mailto:essaadani.yo@gmail.com" className="button button-dark">Start a conversation <ArrowUpRight size={16} /></a><a href="/assets/pdfs/Younes_Essaadani_Resume.pdf" download className="text-link">Résumé <Download size={15} /></a></div></div>
       <div className="portrait-wrap"><div className="shape shape-coral" /><div className="shape shape-teal" /><div className="portrait-frame"><Image src="/images/younes-essaadani.png" alt="Portrait of Younes Essaadani" fill priority sizes="(max-width: 800px) 80vw, 38vw" /></div><span className="availability"><i /> Available for ambitious projects</span></div>
       <a className="scroll-cue" href="#about" aria-label="Scroll to profile"><ArrowDownRight /></a>
     </section>
@@ -61,6 +61,6 @@ export default function Home() {
 
     <section className="stack-section"><div className="shell stack-inner"><p className="eyebrow">Working toolkit</p><div className="stack-list">TypeScript <i /> Node.js <i /> Next.js <i /> Azure <i /> React <i /> LangGraph <i /> PostgreSQL <i /> Docker</div></div></section>
 
-    <footer className="footer shell"><div><p className="eyebrow">Have a hard problem?</p><h2>Let&apos;s build something <em>useful.</em></h2></div><div className="footer-contact"><a href="mailto:essaadani.yo@gmail.com" className="button button-light"><Mail size={16} /> Get in touch</a><div><a href="https://linkedin.com/in/younes-essaadani" target="_blank" rel="me noreferrer">LinkedIn ↗</a><a href="https://github.com/EssaadaniYounes" target="_blank" rel="me noreferrer">GitHub ↗</a><a href="https://x.com/EssaadaniYounes" target="_blank" rel="me noreferrer">X ↗</a></div></div><p className="copyright">© {new Date().getFullYear()} Younes Essaadani · Senior Full-Stack Engineer</p></footer>
+    <footer className="footer shell"><div><p className="eyebrow">Have a hard problem?</p><h2>Let&apos;s build something <em>useful.</em></h2></div><div className="footer-contact"><a href="mailto:essaadani.yo@gmail.com" className="button button-light"><Mail size={16} /> Get in touch</a><div><a href="https://linkedin.com/in/younes-essaadani" target="_blank" rel="me noreferrer">LinkedIn ↗</a><a href="https://github.com/EssaadaniYounes" target="_blank" rel="me noreferrer">GitHub ↗</a><a href="https://x.com/EssaadaniYounes" target="_blank" rel="me noreferrer">X ↗</a></div></div><p className="copyright">© {new Date().getFullYear()} Younes Essaadani · Senior Backend &amp; AI Systems Engineer</p></footer>
   </main>;
 }

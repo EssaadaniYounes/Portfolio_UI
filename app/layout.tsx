@@ -3,11 +3,11 @@ import "./globals.css";
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.essaadani.dev"),
     title: {
-        default: "Younes Essaadani | Senior Full-Stack Engineer",
+        default: "Younes Essaadani | Senior Backend & AI Systems Engineer",
         template: "%s | Younes Essaadani",
     },
     description:
-        "Full Stack & AI Engineer building SaaS products, landing pages, and AI systems with Next.js, Node.js, and modern tools. Available for freelance and remote work.",
+        "Senior Backend and AI Systems Engineer specializing in production RAG pipelines, distributed systems, LangGraph, and large-scale data architecture.",
     keywords: [
         "Full Stack Developer",
         "AI Engineer",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
         type: "website",
         locale: "en_US",
         url: "https://www.essaadani.dev",
-        title: "Younes Essaadani – Full Stack & AI Engineer",
+        title: "Younes Essaadani | Senior Backend & AI Systems Engineer",
         description:
-            "I build SaaS products and AI systems that ship. Specialized in Next.js, Node.js, and scalable architectures.",
+            "Senior Backend and AI Systems Engineer specializing in production RAG pipelines, distributed systems, LangGraph, and large-scale data architecture.",
         siteName: "essaadani.dev",
         images: [
             {
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Younes Essaadani – Full Stack & AI Engineer",
+        title: "Younes Essaadani | Senior Backend & AI Systems Engineer",
         description:
-            "Full Stack & AI Engineer building SaaS and AI-powered products.",
+            "Senior Backend and AI Systems Engineer building production RAG pipelines and large-scale distributed systems.",
         images: ["/og-image.png"],
         creator: "@EssaadaniYounes",
     },
