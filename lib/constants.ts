@@ -282,7 +282,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ];
 
-export const ARTICLES: Article[] = [
+const LEGACY_ARTICLES = [
   {
     thumbnail:
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*WYM1WgyXLzwPYjdvuzzC9w.png",
@@ -331,6 +331,16 @@ export const ARTICLES: Article[] = [
       "In some cases you want to add custom properties to your pagination response in laravel but ",
     url: "https://medium.com/@essaadani.yo/laravel-custom-properties-in-your-pagination-response-bb0e8739f1e8",
   },
+];
+
+export const ARTICLES: Article[] = [
+  { title: "Protect your app under high load with RabbitMQ", description: "Why queues protect Node.js APIs from traffic spikes by moving slow work out of the request lifecycle—and when that added complexity is justified.", url: "https://medium.com/@essaadani.yo/protect-your-app-under-high-load-with-rabbitmq-7ed01a43248b", publishedAt: "Feb 5, 2026", category: "Backend systems", readTime: "4 min read" },
+  { title: "Memory Leaks in React & Next.js: What Nobody Tells You", description: "A practical guide to timers, async calls, event listeners, and large state objects that silently keep React components alive after unmounting.", url: "https://medium.com/@essaadani.yo/memory-leaks-in-react-next-js-what-nobody-tells-you-91c72b53d84d", publishedAt: "Jan 21, 2026", category: "React performance", readTime: "3 min read" },
+  { title: "Program to interface NOT implementation", description: "How coding against contracts instead of concrete implementations creates systems that are easier to extend, test, and maintain.", url: "https://medium.com/@essaadani.yo/program-to-interface-not-implementation-29154de5c5b4", publishedAt: "Aug 13, 2024", category: "Software design" },
+  { title: "Laravel Design patterns: #Strategy", description: "A payment-processing example showing how the Strategy pattern encapsulates interchangeable behavior in a Laravel application.", url: "https://medium.com/@essaadani.yo/laravel-design-patterns-strategy-4320b4479844", publishedAt: "Aug 7, 2024", category: "Laravel", readTime: "4 min read" },
+  { title: "Design Patterns in Laravel #Service", description: "Using service classes to separate business logic, reduce controller complexity, and make Laravel applications easier to reuse and test.", url: "https://medium.com/@essaadani.yo/design-patterns-in-laravel-service-76645d7afe19", publishedAt: "Jul 31, 2024", category: "Laravel" },
+  { title: "Laravel: Custom properties in your pagination response", description: "A focused Laravel technique for attaching useful custom metadata when the default pagination response is not enough.", url: "https://medium.com/@essaadani.yo/laravel-custom-properties-in-your-pagination-response-bb0e8739f1e8", publishedAt: "May 22, 2024", category: "Laravel" },
+  { title: "Improve your application performance: Node.js and Redis", description: "A hands-on introduction to caching frequently requested data with Redis, Express, Node.js, and Docker to reduce database work and response time.", url: "https://medium.com/@essaadani.yo/improve-your-application-performance-nodejs-and-redis-ed90cbce0763", publishedAt: "May 1, 2024", category: "Backend performance", readTime: "4 min read" },
 ];
 
 export const MENU_LINKS: MenuLink[] = [

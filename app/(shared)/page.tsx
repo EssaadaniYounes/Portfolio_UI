@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowDownRight, ArrowUpRight, Download, Mail } from "lucide-react";
 import type { Metadata } from "next";
 import SeoJsonLd from "@/components/seo-json-ld";
+import Articles from "@/components/articles";
 
 export const metadata: Metadata = {
   title: { absolute: "Younes Essaadani | Senior Full-Stack Engineer" },
@@ -35,7 +36,7 @@ export default function Home() {
     <SeoJsonLd />
     <header className="site-header shell">
       <Link href="#top" className="wordmark" aria-label="Younes Essaadani, home">YE<span>.</span></Link>
-      <nav aria-label="Primary navigation"><Link href="#work">Work</Link><Link href="#experience">Experience</Link><Link href="#about">About</Link></nav>
+      <nav aria-label="Primary navigation"><Link href="#work">Work</Link><Link href="#experience">Experience</Link><Link href="#writing">Writing</Link><Link href="#about">About</Link></nav>
       <a href="mailto:essaadani.yo@gmail.com" className="button button-dark">Let&apos;s talk <ArrowUpRight size={15} /></a>
     </header>
 
@@ -52,6 +53,8 @@ export default function Home() {
     <section id="work" className="section section-tint"><div className="shell"><div className="section-heading split-heading"><div><p className="eyebrow">Selected work</p><h2>Systems with measurable impact.</h2></div><p>Case studies from SaaS, AI, and operational platforms.</p></div><div className="projects-grid">{projects.map(([image,title,meta,href], index) => <Link href={href} className="project-card" key={title}><div className="project-image"><Image src={image} alt={`${title} project illustration`} fill sizes="(max-width: 800px) 100vw, 33vw" /></div><div className="project-info"><div><span>0{index+1}</span><h3>{title}</h3><p>{meta}</p></div><ArrowUpRight /></div></Link>)}</div></div></section>
 
     <section id="experience" className="section shell experience-section"><div className="section-heading"><p className="eyebrow">Experience</p><h2>Building across industries and borders.</h2></div><div className="experience-list">{experience.map(([date,company,role,detail]) => <article key={company}><p className="experience-date">{date}</p><div><h3>{company}</h3><p className="role">{role}</p></div><p className="experience-detail">{detail}</p></article>)}</div></section>
+
+    <Articles />
 
     <section className="stack-section"><div className="shell stack-inner"><p className="eyebrow">Working toolkit</p><div className="stack-list">TypeScript <i /> Node.js <i /> Next.js <i /> Azure <i /> React <i /> LangGraph <i /> PostgreSQL <i /> Docker</div></div></section>
 

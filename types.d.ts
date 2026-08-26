@@ -30,10 +30,13 @@ type SocialLink = {
 };
 
 type Article = {
-  thumbnail: string;
+  thumbnail?: string;
   title: string;
   description: string;
   url: string;
+  publishedAt: string;
+  category: string;
+  readTime?: string;
 };
 
 type MenuLink = {
