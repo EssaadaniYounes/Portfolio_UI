@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: "https://www.essaadani.dev",
         title: "Younes Essaadani | Senior Backend & AI Systems Engineer",
         description:
-            "Senior Backend and AI Systems Engineer specializing in production RAG pipelines, distributed systems, LangGraph, and large-scale data architecture.",
+            "Senior Backend & AI Systems Engineer building production RAG pipelines, distributed systems, and scalable data platforms.",
         siteName: "essaadani.dev",
         images: [
             {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Younes Essaadani | Senior Backend & AI Systems Engineer",
         description:
-            "Senior Backend and AI Systems Engineer building production RAG pipelines and large-scale distributed systems.",
+            "Senior Backend & AI Systems Engineer building production RAG pipelines, distributed systems, and scalable data platforms.",
         images: ["/og-image.png"],
         creator: "@EssaadaniYounes",
     },
