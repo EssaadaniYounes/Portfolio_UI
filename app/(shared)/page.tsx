@@ -18,11 +18,11 @@ const capabilities = [
   ["03", "Product engineering", "Responsive React, Next.js, and Angular interfaces—delivered end to end with quality, performance, and polish.", "yellow"],
 ];
 const experience = [
-  ["2026 — Now", "UNRWA", "Senior Software Engineer Consultant", "Azure archive architecture for 16M documents across five countries."],
-  ["2025 — 2026", "DXC Technology", "Front-End Engineer", "Modernized enterprise insurance workflows from Angular 10 to 18."],
-  ["2025", "Superintro", "Full-Stack Engineer / Technical Lead", "Led a 14-person team building an AI relationship-matching platform."],
+  ["2026", "UNRWA", "Senior Software Engineer Consultant", "Co-designed an Azure archive architecture for 16M documents across five countries."],
+  ["2025 — 2026", "DXC Technology", "Full Stack Engineer", "Modernized enterprise insurance workflows from Angular 10 to 18."],
   ["2023 — 2024", "Dropify", "Backend Engineer", "Scaled e-commerce infrastructure serving more than 70K sellers."],
-  ["2022 — 2023", "Lofty", "Junior Full-Stack Engineer", "Modernized a CRM used by 90–120 staff and roughly 2,000 clients."],
+  ["2022 — 2023", "LoftyService", "Full Stack Engineer", "Modernized a CRM used by 90–120 staff and roughly 2,000 clients."],
+  ["2022", "University Sultan Moulay Slimane", "Frontend Developer Intern", "Built frontend features with Next.js and TypeScript."],
 ];
 const projects = [
   ["/images/projects/unrwa.png", "Intelligent digital archive", "Azure · Document AI · Next.js", "/unrwa/overview"],
